@@ -94,6 +94,7 @@ natural-scroll=false
 [org/gnome/desktop/peripherals/touchpad]
 natural-scroll=true
 send-events='enabled'
+tap-and-drag=true
 two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/privacy]
@@ -196,7 +197,7 @@ initial-size=(1594, 1025)
 maximized=true
 
 [org/gnome/settings-daemon/plugins/color]
-night-light-last-coordinates=(40.395599539884813, -79.902006099999994)
+night-light-last-coordinates=(42.364700719942405, -71.128399999999999)
 
 [org/gnome/settings-daemon/plugins/xsettings]
 antialiasing='grayscale'
