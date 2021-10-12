@@ -1,0 +1,5 @@
+Command: /Users/mango/miniconda3/envs/gen/bin/nvr
+Arguments: --remote-silent +"%line" "%file"
+
+nvr needs psutil to work. pip install (which pip install neovim-remote uses) is outdated.
+Use `conda install -c anaconda psutil` first.

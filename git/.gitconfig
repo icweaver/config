@@ -1,0 +1,13 @@
+[user]
+	email = iweaver@cfa.harvard.edu
+	name = icweaver
+[core]
+	editor = nvim
+[merge]
+	tool = vimdiff
+[mergetool]
+	keepBackup = false
+[mergetool "vimdiff"]
+	cmd = nvim -d $LOCAL $REMOTE $MERGED
+[difftool]
+	prompt = false

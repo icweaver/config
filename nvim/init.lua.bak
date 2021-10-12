@@ -1,0 +1,36 @@
+local cmd = vim.cmd  -- to execute Vim commands e.g. cmd('pwd')
+local fn = vim.fn    -- to call Vim functions e.g. fn.bufnr()
+local g = vim.g      -- a table to access global variables
+local opt = vim.opt  -- to set options
+
+
+cmd("packadd packer.nvim")
+return require("packer").startup(function()
+  -- Packer can manage itself
+  use "wbthomason/packer.nvim"
+  use "folke/tokyonight.nvim"
+  --use {"~/code/glow.nvim", run = ":GlowInstall"}
+end)
+
+-- require "paq" {
+--         "savq/paq-nvim";         -- Let Paq manage itself
+--         "folke/tokyonight.nvim"; -- Colorscheme
+-- }
+
+--g.tokyonight_transparent = true
+
+--cmd("colorscheme tokyonight")
+
+-- opt.expandtab = true
+-- opt.autoindent = true
+-- opt.number = true
+-- opt.list = true
+-- opt.mouse = "a"
+-- -- opt.colorcolumn = 91
+-- opt.cursorline = true
+-- opt.termguicolors = true
+-- opt.splitright = true
+-- -- opt.diffopt += "vertical"
+-- -- opt.shortmess = "aoOtI"
+-- -- opt.nostartofline = true
+-- -- opt.nojoinspaces = true

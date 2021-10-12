@@ -1,0 +1,9 @@
+google-chrome
+google-drive-file-stream
+istat-menus
+iterm2
+julia
+osxfuse
+slack
+zoomus
+zulip

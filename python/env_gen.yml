@@ -1,0 +1,33 @@
+name: gen
+channels:
+  - conda-forge
+dependencies:
+  - astropy
+  - batman-package
+  - cmake
+  - conda
+  - corner
+  - deepdish
+  - george
+  - gsl
+  - ipython
+  - ipywidgets
+  - jupyter_contrib_nbextensions
+  - jupyterthemes
+  - matplotlib
+  - mpi4py
+  - notebook
+  - numpy
+  - pandas
+  - pip
+  - psutil
+  - pymultinest
+  - pynvim
+  - python
+  - scipy
+  - seaborn
+  - pip:
+    - mplcyberpunk
+    - neovim-remote
+    - PyAstronomy
+    - pymultinest

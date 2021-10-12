@@ -1,0 +1,15 @@
+https://askubuntu.com/questions/1091880/have-to-run-modprobe-every-time-i-want-to-use-my-webcam-on-macbook-air
+
+facetimehd can conflict with the the bdc_pci module included in the kernel. Disable it by adding:
+
+blacklist-bdc_pci.conf
+
+to /etc/modprobe.d/
+
+And for good measure, add:
+
+facetimehd.conf
+
+to /etc/modules-load.d/
+
+

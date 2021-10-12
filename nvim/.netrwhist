@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/usr/local/share/fonts'
+let g:netrw_dirhist_2='/home/mango/Projects/Transits.jl/src/orbits'
+let g:netrw_dirhist_1='/home/mango/Projects/WASP-50b/notebooks/data/detrended/out_l_C/WASP50/w50_131219_IMACS/wavelength/wbin1/PCA_2'
+let g:netrw_dirhist_0='/home/mango/Projects/WASP-50b/notebooks/data/detrended/out_l_C/WASP50/w50_131219_IMACS/wavelength/wbin1'
+let g:netrw_dirhist_9='/home/mango/Projects/Transits.jl/test'
+let g:netrw_dirhist_8='/home/mango/Projects/Transits.jl/test/orbits'
+let g:netrw_dirhist_7='/home/mango/Desktop'
+let g:netrw_dirhist_6='/home/mango/Projects/Transits.jl/src/orbits'
+let g:netrw_dirhist_5='/home/mango/data/WASP50/ut150927'
+let g:netrw_dirhist_4='/home/mango/Projects/WASP-50b/notebooks/data/detrended_binned_lcs/out_l/WASP50/w50_161211'

@@ -1,0 +1,2 @@
+https://stackoverflow.com/questions/5074136/git-rebase-fails-your-local-changes-to-the-following-files-would-be-overwritte
+git config --global core.trustctime false

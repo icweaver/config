@@ -1,0 +1,46 @@
+{
+  "Notebook": {
+    "Toolbar": false,
+    "Header": false
+  },
+  "load_extensions": {
+    "ruler/main": true,
+    "toc2/main": true,
+    "scratchpad/main": false,
+    "spellchecker/main": true,
+    "select_keymap/main": true,
+    "jupyter-js-widgets/extension": true,
+    "splitcell/splitcell": false,
+    "code_prettify/autopep8": false,
+    "toggle_all_line_numbers/main": false
+  },
+  "ruler_column": [
+    "79"
+  ],
+  "toc2": {
+    "number_sections": false,
+    "toc_window_display": true,
+    "navigate_menu": true,
+    "colors": {
+      "hover_highlight": "#f37727",
+      "selected_highlight": "#f37727",
+      "on_scroll": "#f37727",
+      "navigate_text": "#b7b7b7"
+    },
+    "sideBar": true
+  },
+  "ruler_do_css_patch": false,
+  "ruler_color": [
+    "#4f637a"
+  ],
+  "CodeCell": {
+    "cm_config": {
+      "lineNumbers": true
+    }
+  },
+  "Cell": {
+    "cm_config": {
+      "lineNumbers": false
+    }
+  }
+}
