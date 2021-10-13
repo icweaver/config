@@ -13,6 +13,11 @@ window-maximized=false
 window-position=(962, 393)
 window-size=(567, 534)
 
+[org/gnome/Geary]
+folder-list-pane-position-horizontal=100
+messages-pane-position=351
+migrated-config=true
+
 [org/gnome/Weather]
 automatic-location=false
 
@@ -22,7 +27,10 @@ window-size=(948, 528)
 window-state=87168
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='universal-access'
+
+[org/gnome/desktop/a11y]
+always-show-universal-access-status=false
 
 [org/gnome/desktop/app-folders/folders/Pop-Office]
 apps=['libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-writer.desktop']
@@ -61,7 +69,7 @@ gtk-im-module='gtk-im-context-simple'
 gtk-key-theme='Default'
 monospace-font-name='JuliaMono 12'
 show-battery-percentage=true
-text-scaling-factor=1.0
+text-scaling-factor=1.25
 
 [org/gnome/desktop/notifications]
 application-children=['gnome-datetime-panel', 'io-elementary-appcenter', 'zulip', 'google-chrome', 'com-github-donadigo-eddy', 'cisco-anyconnect']
@@ -220,7 +228,7 @@ multi-monitor=false
 animate-appicon-hover=false
 animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
 appicon-margin=8
-available-monitors=[1, 0]
+available-monitors=[0]
 dot-color-1='#5294e2'
 dot-color-2='#5294e2'
 dot-color-3='#5294e2'
@@ -300,8 +308,8 @@ use-theme-transparency=false
 use-transparent-background=true
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.93333333333333335, 0.93333333333333335, 0.93333333333333335, 1.0), (0.84666666666666668, 0.28504444444444443, 0.28504444444444443, 1.0), (0.80000000000000004, 0.0, 0.0, 1.0), (0.43690000000000001, 0.61879888888888901, 0.85666666666666669, 1.0), (0.35511111111111121, 0.5406740740740742, 0.78333333333333344, 1.0), (0.56833333333333336, 0.7192777777777779, 0.91666666666666674, 1.0), (0.2627450980392157, 0.46666666666666667, 0.73333333333333328, 1.0), (0.2615555555555556, 0.46795833333333342, 0.73333333333333339, 1.0)]
-selected-color=(true, 0.0, 0.0, 0.0, 1.0)
+custom-colors=[(0.94901960784313721, 0.94901960784313721, 0.94901960784313721, 1.0), (0.93333333333333335, 0.93333333333333335, 0.93333333333333335, 1.0), (0.84666666666666668, 0.28504444444444443, 0.28504444444444443, 1.0), (0.80000000000000004, 0.0, 0.0, 1.0), (0.43690000000000001, 0.61879888888888901, 0.85666666666666669, 1.0), (0.35511111111111121, 0.5406740740740742, 0.78333333333333344, 1.0), (0.56833333333333336, 0.7192777777777779, 0.91666666666666674, 1.0), (0.2627450980392157, 0.46666666666666667, 0.73333333333333328, 1.0)]
+selected-color=(true, 0.94901960784313721, 0.94901960784313721, 0.94901960784313721, 1.0)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
