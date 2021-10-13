@@ -27,7 +27,7 @@ window-size=(948, 528)
 window-state=87168
 
 [org/gnome/control-center]
-last-panel='universal-access'
+last-panel='keyboard'
 
 [org/gnome/desktop/a11y]
 always-show-universal-access-status=false
@@ -117,11 +117,29 @@ primary-color='#000000000000'
 secondary-color='#000000000000'
 
 [org/gnome/desktop/wm/keybindings]
-begin-move=['<Alt>z']
-begin-resize=['<Alt>a']
+begin-move=['<Super>z']
+begin-resize=['<Super>a']
+cycle-group=@as []
+cycle-group-backward=@as []
+cycle-panels=@as []
+cycle-panels-backward=@as []
+cycle-windows=@as []
+cycle-windows-backward=@as []
+move-to-workspace-1=@as []
+move-to-workspace-last=@as []
+switch-applications=['<Alt>Tab']
+switch-applications-backward=['<Shift><Alt>Tab']
+switch-panels=@as []
+switch-panels-backward=@as []
+switch-to-workspace-1=@as []
+switch-to-workspace-down=['<Shift><Super>Down']
+switch-to-workspace-last=@as []
+switch-to-workspace-up=['<Shift><Super>Up']
+unmaximize=['<Super>s']
 
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,close'
+num-workspaces=2
 titlebar-font='JuliaMono 12'
 
 [org/gnome/eog/view]
@@ -195,6 +213,12 @@ col-6-width=0
 
 [org/gnome/mutter]
 attach-modal-dialogs=false
+dynamic-workspaces=false
+workspaces-only-on-primary=false
+
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=@as []
+toggle-tiled-right=@as []
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
@@ -212,8 +236,8 @@ antialiasing='grayscale'
 hinting='slight'
 
 [org/gnome/shell]
-disabled-extensions=['hidetopbar@mathieu.bidon.ca', 'cosmic-dock@system76.com', 'dash-to-dock@micxgx.gmail.com']
-enabled-extensions=['ding@rastersoft.com', 'pop-cosmic@system76.com', 'pop-shell@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com']
+disabled-extensions=['hidetopbar@mathieu.bidon.ca', 'cosmic-dock@system76.com', 'dash-to-dock@micxgx.gmail.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['ding@rastersoft.com', 'pop-cosmic@system76.com', 'pop-shell@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'dash-to-panel@jderose9.github.com']
 favorite-apps=@as []
 
 [org/gnome/shell/extensions/dash-to-dock]
@@ -221,14 +245,14 @@ apply-custom-theme=false
 dock-position='LEFT'
 extend-height=false
 force-straight-corner=false
-manualhide=false
+manualhide=true
 multi-monitor=false
 
 [org/gnome/shell/extensions/dash-to-panel]
 animate-appicon-hover=false
 animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
 appicon-margin=8
-available-monitors=[0]
+available-monitors=[1, 0]
 dot-color-1='#5294e2'
 dot-color-2='#5294e2'
 dot-color-3='#5294e2'
@@ -277,11 +301,33 @@ show-applications-button=false
 show-workspaces-button=false
 
 [org/gnome/shell/extensions/pop-shell]
+activate-launcher=@as []
+focus-down=@as []
+focus-left=@as []
+focus-right=@as []
+focus-up=@as []
 gap-inner=uint32 1
 gap-outer=uint32 1
+pop-monitor-down=@as []
+pop-monitor-left=@as []
+pop-monitor-right=@as []
+pop-monitor-up=@as []
+pop-workspace-down=@as []
+pop-workspace-up=@as []
 show-title=true
 tile-by-default=false
-tile-move-right=['Right', 'KP_Right', 'l']
+tile-move-down=@as []
+tile-move-left=@as []
+tile-move-right=@as []
+tile-move-up=@as []
+tile-swap-down=@as []
+tile-swap-left=@as []
+tile-swap-right=@as []
+tile-swap-up=@as []
+toggle-stacking-global=@as []
+
+[org/gnome/shell/keybindings]
+toggle-application-view=@as []
 
 [org/gnome/shell/weather]
 automatic-location=false
