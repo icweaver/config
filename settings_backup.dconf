@@ -8,7 +8,7 @@ enable=false
 mode='hidpi'
 
 [io/elementary/appcenter/settings]
-last-refresh-time=int64 1634146175
+last-refresh-time=int64 1634232593
 window-maximized=false
 window-position=(962, 393)
 window-size=(567, 534)
@@ -349,8 +349,12 @@ enabled=true
 theme-variant='dark'
 
 [org/gnome/terminal/legacy/keybindings]
-next-tab='<Primary>l'
-prev-tab='<Primary>h'
+find='disabled'
+find-clear='disabled'
+find-next='disabled'
+find-previous='disabled'
+next-tab='<Primary><Shift>l'
+prev-tab='<Primary><Shift>h'
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 audible-bell=false
