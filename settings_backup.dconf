@@ -5,10 +5,10 @@ window-y=483
 
 [com/system76/hidpi]
 enable=false
-mode='lodpi'
+mode='hidpi'
 
 [io/elementary/appcenter/settings]
-last-refresh-time=int64 1634059768
+last-refresh-time=int64 1634146175
 window-maximized=false
 window-position=(962, 393)
 window-size=(567, 534)
@@ -26,8 +26,16 @@ active-chart='rings'
 window-size=(948, 528)
 window-state=87168
 
+[org/gnome/cheese]
+burst-delay=1000
+camera='BisonCam,NB Pro  BisonCam,NB Pr'
+photo-x-resolution=640
+photo-y-resolution=480
+video-x-resolution=640
+video-y-resolution=480
+
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='wifi'
 
 [org/gnome/desktop/a11y]
 always-show-universal-access-status=false
@@ -139,7 +147,7 @@ unmaximize=['<Super>s']
 
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,close'
-num-workspaces=2
+num-workspaces=3
 titlebar-font='JuliaMono 12'
 
 [org/gnome/eog/view]
@@ -188,7 +196,7 @@ active-plugins=['docinfo', 'sort', 'modelines', 'spell', 'filebrowser']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/mango/Downloads'
+virtual-root='file:///home/mango'
 
 [org/gnome/gedit/preferences/ui]
 show-tabs-mode='auto'
@@ -236,6 +244,7 @@ antialiasing='grayscale'
 hinting='slight'
 
 [org/gnome/shell]
+command-history=['r']
 disabled-extensions=['hidetopbar@mathieu.bidon.ca', 'cosmic-dock@system76.com', 'dash-to-dock@micxgx.gmail.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['ding@rastersoft.com', 'pop-cosmic@system76.com', 'pop-shell@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'dash-to-panel@jderose9.github.com']
 favorite-apps=@as []
@@ -252,7 +261,7 @@ multi-monitor=false
 animate-appicon-hover=false
 animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
 appicon-margin=8
-available-monitors=[1, 0]
+available-monitors=[2, 0, 1]
 dot-color-1='#5294e2'
 dot-color-2='#5294e2'
 dot-color-3='#5294e2'
@@ -268,11 +277,11 @@ hotkeys-overlay-combo='TEMPORARILY'
 intellihide=true
 leftbox-size=0
 multi-monitors=false
-panel-anchors='{"0":"MIDDLE","1":"MIDDLE"}'
+panel-anchors='{"0":"MIDDLE","1":"MIDDLE","2":"MIDDLE"}'
 panel-element-positions='{"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}],"1":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
-panel-lengths='{"0":100,"1":100}'
+panel-lengths='{"0":100,"1":100,"2":100}'
 panel-sizes='{"0":42,"1":42}'
-primary-monitor=1
+primary-monitor=2
 show-apps-icon-file=''
 status-icon-padding=-1
 stockgs-keep-dash=false
@@ -280,7 +289,7 @@ stockgs-keep-top-panel=false
 trans-bg-color='#000000'
 trans-gradient-bottom-color='#000000'
 trans-gradient-bottom-opacity=0.0
-trans-panel-opacity=0.5
+trans-panel-opacity=0.59999999999999998
 trans-use-custom-bg=true
 trans-use-custom-gradient=false
 trans-use-custom-opacity=true
@@ -306,8 +315,8 @@ focus-down=@as []
 focus-left=@as []
 focus-right=@as []
 focus-up=@as []
-gap-inner=uint32 1
-gap-outer=uint32 1
+gap-inner=uint32 0
+gap-outer=uint32 0
 pop-monitor-down=@as []
 pop-monitor-left=@as []
 pop-monitor-right=@as []
@@ -315,7 +324,7 @@ pop-monitor-up=@as []
 pop-workspace-down=@as []
 pop-workspace-up=@as []
 show-title=true
-tile-by-default=false
+tile-by-default=true
 tile-move-down=@as []
 tile-move-left=@as []
 tile-move-right=@as []
@@ -354,14 +363,14 @@ cursor-blink-mode='on'
 default-size-rows=24
 font='JuliaMono 12'
 foreground-color='rgb(170,170,170)'
-palette=['rgb(46,52,54)', 'rgb(219,68,68)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+palette=['rgb(46,52,54)', 'rgb(219,68,68)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(230,80,80)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
 use-theme-colors=true
 use-theme-transparency=false
 use-transparent-background=true
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.8600000000000001, 0.26660000000000006, 0.26660000000000006, 1.0), (0.82745098039215681, 0.84313725490196079, 0.81176470588235294, 1.0), (0.94901960784313721, 0.94901960784313721, 0.94901960784313721, 1.0), (0.93333333333333335, 0.93333333333333335, 0.93333333333333335, 1.0), (0.84666666666666668, 0.28504444444444443, 0.28504444444444443, 1.0), (0.80000000000000004, 0.0, 0.0, 1.0), (0.43690000000000001, 0.61879888888888901, 0.85666666666666669, 1.0), (0.35511111111111121, 0.5406740740740742, 0.78333333333333344, 1.0)]
-selected-color=(true, 0.8600000000000001, 0.26660000000000006, 0.26660000000000006, 1.0)
+custom-colors=[(0.90000000000000002, 0.312, 0.312, 1.0), (0.93725490196078431, 0.16078431372549021, 0.16078431372549021, 1.0), (0.8600000000000001, 0.26660000000000006, 0.26660000000000006, 1.0), (0.82745098039215681, 0.84313725490196079, 0.81176470588235294, 1.0), (0.94901960784313721, 0.94901960784313721, 0.94901960784313721, 1.0), (0.93333333333333335, 0.93333333333333335, 0.93333333333333335, 1.0), (0.84666666666666668, 0.28504444444444443, 0.28504444444444443, 1.0), (0.80000000000000004, 0.0, 0.0, 1.0)]
+selected-color=(true, 0.90000000000000002, 0.312, 0.312, 1.0)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -369,10 +378,10 @@ location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=175
+sidebar-width=202
 sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(305, 1103)
+window-position=(906, 857)
 window-size=(1310, 982)
