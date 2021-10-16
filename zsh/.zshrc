@@ -71,14 +71,14 @@ export H="iweaver@hydra-login01.si.edu"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/mango/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/mango/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/mango/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/mango/miniconda3/bin:$PATH"
+        export PATH="/opt/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -131,14 +131,6 @@ export PYSYN_CDBS="$HOME/data/pandexo/synphot5/grp/hst/cdbs"
 
 fpath+=~/.zfunc
 
-autoload -Uz vcs_info
-precmd() { vcs_info }
-zstyle ':vcs_info:git:*' formats '%b'
-setopt PROMPT_SUBST
-PROMPT='
-($CONDA_DEFAULT_ENV) %B%F{208}%n%f%b:%F{40}%~%f%F{220} (${vcs_info_msg_0_}) %f
-> '
-
 export PATH="$HOME/.poetry/bin:$PATH"
 
 case $TERM in
@@ -149,3 +141,11 @@ esac
 
 autoload -Uz compinit
 compinit
+
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats '%b'
+setopt PROMPT_SUBST
+PROMPT='
+($CONDA_DEFAULT_ENV) %B%F{208}%n%f%b:%F{40}%~%f%F{220} (${vcs_info_msg_0_}) %f
+> '
