@@ -13,6 +13,7 @@ alias rse2="rsync -trluhvv --delete --stats --inplace iweaver@emu.astro.puc.cl:/
 alias ..="cd .."
 alias acc="cd ~/cfa/mercedes/ACCESS"
 alias anc="open -a /Applications/Cisco/Cisco\ AnyConnect\ Secure\ Mobility\ Client.app"
+alias bk="cp -r ~/.config/xfce4 ~/config/"
 alias bkmint="dconf dump / > ~/configs/mint_backup"
 alias ca="conda activate"
 alias cee="conda env export --from-history"
@@ -40,6 +41,7 @@ alias jtr="jt -r"
 alias jtr="jt -r"
 alias l='ls -CF'
 alias la='ls -A'
+alias ld='cp -r ~/config/xfce4 ~/.config/'
 alias ldmint='dconf load / < ~/configs/mint_backup'
 alias ll='ls -alF'
 alias ls='ls --color=auto'
@@ -109,7 +111,7 @@ mkcd ()
 }
 
 # Julia bin PATH
-export PATH="$PATH:$HOME/julia-1.6.2/bin"
+export PATH="$PATH:$HOME/julia-1.6.3/bin"
 export PATH="$PATH:$HOME/.julia/bin"
 # Julia autocompletion PATH
 export FPATH="$HOME/.julia/completions:$FPATH"
@@ -138,3 +140,12 @@ PROMPT='
 > '
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+case $TERM in
+  xterm*)
+    precmd () {print -Pn "\e]0;%~\a"}
+    ;;
+esac
+
+autoload -Uz compinit
+compinit

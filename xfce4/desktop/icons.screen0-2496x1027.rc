@@ -1,0 +1,15 @@
+[xfdesktop-version-4.10.3+-rcfile_format]
+4.10.3+=true
+
+[Trash]
+row=2
+col=7
+
+[/]
+row=1
+col=7
+
+[/home/mango]
+row=0
+col=7
+
