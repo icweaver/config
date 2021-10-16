@@ -1,7 +1,7 @@
 [Configuration]
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
-MiscBordersDefault=TRUE
+MiscBordersDefault=FALSE
 MiscCursorBlinks=TRUE
 MiscCursorShape=TERMINAL_CURSOR_SHAPE_BLOCK
 MiscDefaultGeometry=80x24
@@ -34,9 +34,9 @@ DropdownKeepOpenDefault=TRUE
 ColorBackgroundVary=TRUE
 TabActivityColor=#aaaa00000000
 ColorUseTheme=TRUE
-ColorPalette=rgb(0,0,0);rgb(232,86,86);rgb(0,170,0);rgb(170,85,0);rgb(68,68,206);rgb(170,0,170);rgb(0,170,170);rgb(170,170,170);rgb(85,85,85);rgb(255,85,85);rgb(85,255,85);rgb(255,255,85);rgb(16,217,238);rgb(255,85,255);rgb(85,255,255);rgb(255,255,255)
+ColorPalette=rgb(0,0,0);rgb(232,86,86);rgb(0,170,0);rgb(207,137,67);rgb(68,68,206);rgb(170,0,170);rgb(0,170,170);rgb(170,170,170);rgb(85,85,85);rgb(255,85,85);rgb(85,255,85);rgb(255,255,85);rgb(16,217,238);rgb(255,85,255);rgb(85,255,255);rgb(255,255,255)
 ColorBoldUseDefault=FALSE
-ColorBold=#e6e661610000
+ColorBold=#9999c1c1f1f1
 ColorCursorUseDefault=FALSE
 ColorCursorForeground=#ffffffffffff
 ColorCursor=#ffff78780000
