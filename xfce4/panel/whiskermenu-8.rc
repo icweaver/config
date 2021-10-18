@@ -1,5 +1,5 @@
 favorites=xfce4-terminal-emulator.desktop,xfce4-file-manager.desktop,xfce4-web-browser.desktop,xfce4-mail-reader.desktop
-recent=xfce-keyboard-settings.desktop,panel-preferences.desktop,bvnc.desktop,timeshift-gtk.desktop,xfce-wm-settings.desktop,xfce-wmtweaks-settings.desktop,xfce4-session-logout.desktop,firefox.desktop,xfce-session-settings.desktop,org.manjaro.pamac.manager.desktop
+recent=panel-preferences.desktop,pavucontrol.desktop,Zoom.desktop,zulip-desktop.desktop,xfce-wm-settings.desktop,xfce-ui-settings.desktop,xfce-keyboard-settings.desktop,xfce4-terminal-settings.desktop,xfce-display-settings.desktop,xfce4-terminal-emulator.desktop
 button-icon=/usr/share/icons/whiskermenu-manjaro.svg
 button-single-row=false
 show-button-title=false
