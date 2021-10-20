@@ -133,11 +133,6 @@ fpath+=~/.zfunc
 
 export PATH="$HOME/.poetry/bin:$PATH"
 
-case $TERM in
-  xterm*)
-    precmd () {print -Pn "\e]0;%~\a"}
-    ;;
-esac
 
 autoload -Uz compinit
 compinit
@@ -145,7 +140,9 @@ compinit
 autoload -Uz vcs_info
 precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats '%b'
+
 setopt PROMPT_SUBST
 PROMPT='
 ($CONDA_DEFAULT_ENV) %B%F{208}%n%f%b:%F{40}%~%f%F{220} (${vcs_info_msg_0_}) %f
 > '
+
