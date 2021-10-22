@@ -1,3 +1,6 @@
+HISTSIZE=-1
+HISTFILESIZE=-1
+
 # rsync -azut --no-perms --no-owner --no-group --ignore-times --exclude 'NestorCode' --progress iweaver@emu.astro.puc.cl:/data/ACCESS/IMACS .
 
 # Aliases
@@ -93,14 +96,32 @@ export PATH="$PATH:$HOME/.julia/bin"
 # Julia autocompletion PATH
 export FPATH="$HOME/.julia/completions:$FPATH"
 
+# Poetry
+export PATH="/home/mango/.local/bin:$PATH"
+
 #setopt PROMPT_SUBST
 #PROMPT='
 #($CONDA_DEFAULT_ENV) %B%F{208}%n%f%b:%F{40}%~%f%F{220} (${vcs_info_msg_0_}) %f
 #> '
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/mango/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/mango/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/mango/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/mango/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
 source /usr/share/bash-completion/completions/git
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-export PS1="\n\[\e[0;1;38;5;208m\]\u\[\e[0m\]: \[\e[0;1;38;5;40m\]\w\[\e[0m\]\[\e[0;1;38;5;220m\]\$(parse_git_branch)\[\e[0m\]\n> "
+export PS1="\n(\$CONDA_DEFAULT_ENV) \[\e[0;1;38;5;208m\]\u\[\e[0m\]: \[\e[0;1;38;5;40m\]\w\[\e[0m\]\[\e[0;1;38;5;220m\]\$(parse_git_branch)\[\e[0m\]\n> "
 PS1=$PS1'\[\e]2;\W\a\]' # set terminal title to cwd
