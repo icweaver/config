@@ -5,13 +5,17 @@ lock-after-screensaver=uint32 5
 lock-on-lid=false
 lock-on-suspend=true
 
+[com/linuxmint/install]
+flatpak-remotes=['flathub::https://dl.flathub.org/repo/::False']
+installed-apps=['apt:git', 'apt:gmail-desktop', 'apt:neovim', 'apt:rclone', 'apt:signal-desktop', 'apt:slack-desktop', 'apt:system76-driver', 'apt:terminator', 'apt:xserver-xorg-input-evdev', 'apt:xserver-xorg-input-mouse', 'apt:zulip']
+
 [com/linuxmint/report]
 ignored-reports=['timeshift-no-setup']
 
 [com/linuxmint/updates]
 default-repo-is-ok=true
-install-last-run=1634766147
-refresh-last-run=1634775493
+install-last-run=1634834494
+refresh-last-run=1634877435
 show-welcome-page=false
 window-height=570
 window-pane-position=280
@@ -21,6 +25,9 @@ window-width=790
 cursor-theme='Adwaita'
 font-name='Noto Sans CJK HK 12'
 monospace-font-name='JuliaMono 12'
+
+[org/gnome/desktop/privacy]
+disable-microphone=false
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -42,9 +49,17 @@ sidebar-width=200
 window-height=480
 window-width=600
 
+[org/gnome/nm-applet/eap/ab577671-645c-46ba-bbb1-b4a05eb57ad5]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/fb519cc0-2aad-4915-9245-03d51b3857fc]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.90333333333333343, 0.4396222222222223, 0.4396222222222223, 1.0), (0.78431372549019607, 0.0, 0.011764705882352941, 1.0), (0.66666666666666663, 0.66666666666666663, 0.66666666666666663, 1.0), (0.66666666666666663, 0.66666666666666663, 0.6705882352941176, 1.0)]
-selected-color=(true, 0.90333333333333343, 0.4396222222222223, 0.4396222222222223, 1.0)
+custom-colors=[(0.22352941176470589, 0.22352941176470589, 0.22352941176470589, 1.0), (0.80333333333333334, 0.27581111111111117, 0.27581111111111117, 1.0), (0.90333333333333343, 0.4396222222222223, 0.4396222222222223, 1.0), (0.78431372549019607, 0.0, 0.011764705882352941, 1.0), (0.66666666666666663, 0.66666666666666663, 0.66666666666666663, 1.0), (0.66666666666666663, 0.66666666666666663, 0.6705882352941176, 1.0)]
+selected-color=(true, 0.0, 0.0, 0.0, 1.0)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -57,5 +72,12 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(1478, 204)
+window-position=(398, 96)
 window-size=(1124, 822)
+
+[org/x/viewer/view]
+background-color='rgb(0,0,0)'
+use-background-color=true
+
+[org/x/viewer/window]
+maximized=true
