@@ -15,15 +15,20 @@ ignored-reports=['timeshift-no-setup']
 [com/linuxmint/updates]
 default-repo-is-ok=true
 install-last-run=1634834494
-refresh-last-run=1634877435
+refresh-last-run=1634925861
 show-welcome-page=false
 window-height=570
 window-pane-position=280
 window-width=790
 
+[org/bluesabre/mugshot]
+email=''
+fax=''
+initials=''
+
 [org/gnome/desktop/interface]
 cursor-theme='Adwaita'
-font-name='Noto Sans CJK HK 12'
+font-name='Lato 12'
 monospace-font-name='JuliaMono 12'
 
 [org/gnome/desktop/privacy]
@@ -72,7 +77,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(398, 96)
+window-position=(398, 97)
 window-size=(1124, 822)
 
 [org/x/viewer/view]
