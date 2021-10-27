@@ -1,0 +1,5 @@
+draglock:
+xinput set-prop 'PNP0C50:00 2808:0101 Touchpad' 'libinput Tapping Drag Lock Enabled' 1
+
+caps lock as escape:
+setxkbmap -option caps:escape
