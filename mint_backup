@@ -22,7 +22,7 @@ ignored-reports=['timeshift-no-setup']
 [com/linuxmint/updates]
 default-repo-is-ok=true
 install-last-run=1635342601
-refresh-last-run=1635344009
+refresh-last-run=1635351916
 show-welcome-page=false
 window-height=570
 window-pane-position=280
@@ -84,7 +84,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(0, 518)
+window-position=(238, 8)
 window-size=(1124, 822)
 
 [org/x/viewer/view]
