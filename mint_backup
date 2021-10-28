@@ -21,8 +21,8 @@ ignored-reports=['timeshift-no-setup']
 
 [com/linuxmint/updates]
 default-repo-is-ok=true
-install-last-run=1635342601
-refresh-last-run=1635351916
+install-last-run=1635428294
+refresh-last-run=1635428104
 show-welcome-page=false
 window-height=570
 window-pane-position=280
