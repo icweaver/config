@@ -54,6 +54,7 @@ push-tile-right=['<Super>Right']
 
 [org/cinnamon/desktop/sound]
 event-sounds=false
+volume-sound-enabled=false
 
 [org/cinnamon/desktop/wm/preferences]
 theme='Mint-Y-Dark'
