@@ -1,8 +1,8 @@
-app=none
+app=drawing
 last_user=
-screenshot_dir=file:///home/mango/Pictures
+screenshot_dir=file:/home/mango/Desktop
 action=1
 delay=0
-region=1
-show_mouse=1
+region=3
+show_mouse=0
 

@@ -1,5 +1,5 @@
 favorites=firefox.desktop,thunderbird.desktop,pix.desktop,rhythmbox.desktop,org.gnome.Calculator.desktop,xed.desktop,mintinstall.desktop,xfce4-taskmanager.desktop
-recent=zulip.desktop,xfce-keyboard-settings.desktop,xfce4-mime-settings.desktop,terminator.desktop,panel-preferences.desktop,xfce-ui-settings.desktop,xfce-settings-manager.desktop,xfce4-settings-editor.desktop,org.gnome.font-viewer.desktop,xfce-mouse-settings.desktop
+recent=thunderbird.desktop,slack.desktop,zulip.desktop,com.cisco.anyconnect.gui.desktop,pavucontrol.desktop,Zoom.desktop,signal-desktop.desktop,xfce-display-settings.desktop,gmail-desktop.desktop,mintupdate.desktop
 button-icon=linuxmint-logo-ring-symbolic
 button-single-row=false
 show-button-title=false

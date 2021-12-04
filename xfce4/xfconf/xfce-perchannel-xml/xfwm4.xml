@@ -12,7 +12,7 @@
     <property name="click_to_focus" type="empty"/>
     <property name="focus_delay" type="empty"/>
     <property name="cycle_apps_only" type="empty"/>
-    <property name="cycle_draw_frame" type="empty"/>
+    <property name="cycle_draw_frame" type="bool" value="false"/>
     <property name="cycle_hidden" type="empty"/>
     <property name="cycle_minimum" type="empty"/>
     <property name="cycle_workspaces" type="empty"/>

@@ -75,8 +75,8 @@ __conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/opt/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/miniconda3/etc/profile.d/conda.sh"
     else
         export PATH="/opt/miniconda3/bin:$PATH"
     fi
@@ -111,7 +111,7 @@ mkcd ()
 }
 
 # Julia bin PATH
-export PATH="$PATH:$HOME/julia-1.6.3/bin"
+export PATH="$PATH:$HOME/julia-1.7.0/bin"
 export PATH="$PATH:$HOME/.julia/bin"
 # Julia autocompletion PATH
 export FPATH="$HOME/.julia/completions:$FPATH"
@@ -145,4 +145,3 @@ setopt PROMPT_SUBST
 PROMPT='
 ($CONDA_DEFAULT_ENV) %B%F{208}%n%f%b:%F{40}%~%f%F{220} (${vcs_info_msg_0_}) %f
 > '
-
