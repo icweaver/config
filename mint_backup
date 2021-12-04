@@ -133,6 +133,7 @@ prev-tab='<Primary><Shift>h'
 background-color='rgb(28,36,38)'
 background-transparency-percent=7
 font='JuliaMono 12'
+palette=['rgb(46,52,54)', 'rgb(218,91,91)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(243,156,156)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
 use-system-font=false
 use-theme-colors=false
 use-theme-transparency=false
@@ -140,8 +141,8 @@ use-transparent-background=true
 visible-name='Default'
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.10900000000000001, 0.13975000000000001, 0.15000000000000002, 1.0)]
-selected-color=(true, 0.10900000000000001, 0.13975000000000001, 0.15000000000000002, 1.0)
+custom-colors=[(0.95333333333333337, 0.61013333333333342, 0.61013333333333342, 1.0), (0.85333333333333339, 0.35840000000000005, 0.35840000000000005, 1.0), (0.10900000000000001, 0.13975000000000001, 0.15000000000000002, 1.0)]
+selected-color=(true, 0.95333333333333337, 0.61013333333333342, 0.61013333333333342, 1.0)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
