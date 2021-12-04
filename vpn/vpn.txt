@@ -1,2 +1,4 @@
+Download anyconnect from vpn.fas.harvard.edu
+
 cfaipsec
 vpn1.cfa.harvard.edu
