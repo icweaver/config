@@ -1,15 +1,16 @@
 [com/linuxmint/updates]
-install-last-run=1638594300
-refresh-last-run=1638643640
+install-last-run=1638816110
+refresh-last-run=1638813917
 show-welcome-page=false
 window-height=570
 window-pane-position=280
 window-width=790
 
 [org/cinnamon]
+alttab-switcher-delay=100
 app-menu-label='Menu'
-enabled-applets=['panel1:right:6:systray@cinnamon.org:18', 'panel1:right:7:xapp-status@cinnamon.org:19', 'panel1:right:8:keyboard@cinnamon.org:20', 'panel1:right:9:notifications@cinnamon.org:21', 'panel1:right:10:printers@cinnamon.org:22', 'panel1:right:11:removable-drives@cinnamon.org:23', 'panel1:right:14:network@cinnamon.org:26', 'panel1:right:15:sound@cinnamon.org:27', 'panel1:right:16:power@cinnamon.org:28', 'panel1:right:17:calendar@cinnamon.org:29', 'panel1:left:0:menu@cinnamon.org:32', 'panel1:left:1:window-list@cinnamon.org:35']
-next-applet-id=36
+enabled-applets=['panel1:right:4:systray@cinnamon.org:18', 'panel1:right:5:xapp-status@cinnamon.org:19', 'panel1:right:6:keyboard@cinnamon.org:20', 'panel1:right:7:notifications@cinnamon.org:21', 'panel1:right:8:printers@cinnamon.org:22', 'panel1:right:9:removable-drives@cinnamon.org:23', 'panel1:right:10:network@cinnamon.org:26', 'panel1:right:11:sound@cinnamon.org:27', 'panel1:right:12:power@cinnamon.org:28', 'panel1:right:13:calendar@cinnamon.org:29', 'panel1:left:0:menu@cinnamon.org:32', 'panel1:left:1:grouped-window-list@cinnamon.org:36']
+next-applet-id=39
 panel-edit-mode=false
 panel-launchers=['DEPRECATED']
 panel-zone-icon-sizes='[{"panelId": 1, "left": 0, "center": 0, "right": 0}]'
@@ -49,15 +50,26 @@ begin-move=['<Super>z']
 begin-resize=['<Super>Shift_L']
 move-to-side-e=@as []
 move-to-side-w=@as []
-push-tile-left=['<Super>Left']
-push-tile-right=['<Super>Right']
+push-snap-down=['<Super>Down']
+push-snap-left=['<Super>Left']
+push-snap-right=['<Super>Right']
+push-snap-up=['<Super>Up']
+push-tile-down=@as []
+push-tile-left=@as []
+push-tile-right=@as []
+push-tile-up=@as []
 
 [org/cinnamon/desktop/sound]
 event-sounds=false
 volume-sound-enabled=false
 
 [org/cinnamon/desktop/wm/preferences]
+min-window-opacity=30
 theme='Mint-Y-Dark'
+
+[org/cinnamon/muffin]
+resize-threshold=24
+tile-hud-threshold=25
 
 [org/cinnamon/settings-daemon/peripherals/keyboard]
 delay=uint32 190
@@ -163,7 +175,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(411, 39)
+window-position=(1509, 1119)
 window-size=(1096, 822)
 
 [org/nemo/desktop]
@@ -173,7 +185,7 @@ home-icon-visible=false
 volumes-visible=false
 
 [org/nemo/window-state]
-geometry='479x550+19+176'
+geometry='899x543+1631+1234'
 maximized=false
 sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
