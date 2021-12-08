@@ -1,6 +1,6 @@
 [com/linuxmint/updates]
-install-last-run=1638816110
-refresh-last-run=1638813917
+install-last-run=1638960680
+refresh-last-run=1638936476
 show-welcome-page=false
 window-height=570
 window-pane-position=280
@@ -18,6 +18,18 @@ panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right
 panels-autohide=['1:true']
 panels-enabled=['1:0:bottom']
 panels-height=['1:27']
+
+[org/cinnamon/desktop/a11y/keyboard]
+bouncekeys-delay=300
+mousekeys-accel-time=300
+mousekeys-init-delay=300
+mousekeys-max-speed=10
+slowkeys-delay=300
+
+[org/cinnamon/desktop/a11y/mouse]
+dwell-threshold=10
+dwell-time=1.2
+secondary-click-time=1.2
 
 [org/cinnamon/desktop/background]
 picture-uri='file:///home/mango/Projects/config/desktop.JPG'
@@ -139,8 +151,20 @@ include-border=true
 include-pointer=false
 last-save-directory='file:///home/mango/Pictures'
 
+[org/gnome/gnome-system-monitor]
+current-tab='processes'
+maximized=false
+show-dependencies=false
+show-whose-processes='user'
+window-state=(959, 867, 50, 50)
+
+[org/gnome/gnome-system-monitor/disktreenew]
+col-6-visible=true
+col-6-width=0
+
 [org/gnome/terminal/legacy]
 default-show-menubar=false
+mnemonics-enabled=true
 
 [org/gnome/terminal/legacy/keybindings]
 find-previous='disabled'
@@ -175,8 +199,8 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(1509, 1119)
-window-size=(1096, 822)
+window-position=(1455, 1119)
+window-size=(1080, 822)
 
 [org/nemo/desktop]
 computer-icon-visible=false
@@ -207,3 +231,10 @@ side-panel-active-page=827629879
 side-panel-size=200
 size=(650, 500)
 state=87168
+
+[org/x/viewer/view]
+background-color='rgb(0,0,0)'
+use-background-color=true
+
+[org/x/viewer/window]
+maximized=false
