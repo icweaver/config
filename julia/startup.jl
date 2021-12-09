@@ -1,7 +1,8 @@
 import REPL
 import Pkg
 
-Pkg.activate(Base.current_project())
+isfile("Project.toml") && Pkg.activate(Base.current_project())
+
 Base.atreplinit() do repl
     repl.interface = REPL.setup_interface(repl)
     repl.interface.modes[1].prompt =
