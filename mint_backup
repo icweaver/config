@@ -1,6 +1,6 @@
 [com/linuxmint/updates]
-install-last-run=1638989399
-refresh-last-run=1639053057
+install-last-run=1639700806
+refresh-last-run=1639696069
 show-welcome-page=false
 window-height=570
 window-pane-position=280
@@ -9,11 +9,12 @@ window-width=790
 [org/cinnamon]
 alttab-switcher-delay=100
 app-menu-label='Menu'
+command-history=['r']
 enabled-applets=['panel1:right:4:systray@cinnamon.org:18', 'panel1:right:5:xapp-status@cinnamon.org:19', 'panel1:right:6:keyboard@cinnamon.org:20', 'panel1:right:7:notifications@cinnamon.org:21', 'panel1:right:8:printers@cinnamon.org:22', 'panel1:right:9:removable-drives@cinnamon.org:23', 'panel1:right:10:network@cinnamon.org:26', 'panel1:right:11:sound@cinnamon.org:27', 'panel1:right:12:power@cinnamon.org:28', 'panel1:right:13:calendar@cinnamon.org:29', 'panel1:left:0:menu@cinnamon.org:32', 'panel1:left:1:grouped-window-list@cinnamon.org:36']
 next-applet-id=39
 panel-edit-mode=false
 panel-launchers=['DEPRECATED']
-panel-zone-icon-sizes='[{"panelId": 1, "left": 0, "center": 0, "right": 0}]'
+panel-zone-icon-sizes='[{"panelId": 1, "left": 0, "center": 0, "right": 22}]'
 panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right": 16}]'
 panels-autohide=['1:true']
 panels-enabled=['1:0:bottom']
@@ -42,9 +43,11 @@ image-source='directory:///home/mango/Projects/config'
 cursor-blink-time=1200
 cursor-size=24
 cursor-theme='Adwaita'
+font-name='Lato 12'
 gtk-theme='Mint-Y-Dark-Orange'
 icon-theme='Mint-Y-Dark-Orange'
 scaling-factor=uint32 0
+text-scaling-factor=1.0
 
 [org/cinnamon/desktop/keybindings/media-keys]
 kbd-brightness-up=['XF86KbdBrightnessUp', 'F4']
@@ -79,6 +82,7 @@ volume-sound-enabled=false
 min-window-opacity=30
 mouse-button-modifier=''
 theme='Mint-Y-Dark'
+titlebar-font='Lato 12'
 
 [org/cinnamon/muffin]
 placement-mode='center'
@@ -96,6 +100,7 @@ drag-threshold=8
 motion-threshold=1
 
 [org/cinnamon/settings-daemon/peripherals/touchpad]
+horizontal-scrolling=true
 motion-threshold=1
 touchpad-enabled=true
 
@@ -122,6 +127,8 @@ secondary-click-enabled=false
 secondary-click-time=1.2
 
 [org/gnome/desktop/interface]
+document-font-name='Lato 12'
+monospace-font-name='JuliaMono 12'
 toolkit-accessibility=false
 
 [org/gnome/desktop/privacy]
@@ -164,6 +171,10 @@ window-state=(959, 867, 50, 50)
 col-6-visible=true
 col-6-width=0
 
+[org/gnome/nm-applet/eap/3a218197-9b5d-41b6-a085-330950b552b0]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/terminal/legacy]
 default-show-menubar=false
 mnemonics-enabled=true
@@ -177,7 +188,7 @@ prev-tab='<Primary><Shift>h'
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 background-color='rgb(28,36,38)'
-background-transparency-percent=7
+background-transparency-percent=21
 default-size-columns=118
 default-size-rows=43
 font='JuliaMono 12'
@@ -198,17 +209,18 @@ location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=148
+sidebar-width=159
 sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(375, 39)
+window-position=(412, 39)
 window-size=(1080, 822)
 
 [org/nemo/desktop]
 computer-icon-visible=false
 desktop-layout='true::true'
+font='Lato 12'
 home-icon-visible=false
 volumes-visible=false
 
@@ -217,7 +229,7 @@ default-folder-viewer='list-view'
 inherit-folder-viewer=true
 
 [org/nemo/window-state]
-geometry='899x543+341+158'
+geometry='899x532+1421+1241'
 maximized=false
 sidebar-bookmark-breakpoint=5
 start-with-menu-bar=false
@@ -241,6 +253,13 @@ side-panel-active-page=827629879
 side-panel-size=200
 size=(650, 500)
 state=87168
+
+[org/x/reader/default]
+window-ratio=(2.4297385620915031, 1.2171717171717171)
+
+[org/x/viewer/ui]
+statusbar=true
+toolbar=true
 
 [org/x/viewer/view]
 background-color='rgb(0,0,0)'
