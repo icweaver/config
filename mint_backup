@@ -1,6 +1,6 @@
 [com/linuxmint/updates]
-install-last-run=1639700806
-refresh-last-run=1639696069
+install-last-run=1639777580
+refresh-last-run=1639783635
 show-welcome-page=false
 window-height=570
 window-pane-position=280
@@ -170,6 +170,9 @@ window-state=(959, 867, 50, 50)
 [org/gnome/gnome-system-monitor/disktreenew]
 col-6-visible=true
 col-6-width=0
+
+[org/gnome/libgnomekbd/keyboard]
+options=['grp\tgrp:win_space_toggle', 'terminate\tterminate:ctrl_alt_bksp', 'caps\tcaps:escape']
 
 [org/gnome/nm-applet/eap/3a218197-9b5d-41b6-a085-330950b552b0]
 ignore-ca-cert=false
