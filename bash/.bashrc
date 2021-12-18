@@ -10,7 +10,7 @@ alias ..="cd .."
 alias acc="cd ~/cfa/mercedes/ACCESS"
 alias anc="open -a /Applications/Cisco/Cisco\ AnyConnect\ Secure\ Mobility\ Client.app"
 alias bkmanjaro="cp -r ~/.config/xfce4 ~/config/"
-alias bk="dconf dump / > ~/config/mint_backup"
+alias bk="dconf dump / > ~/Projects/config/mint_backup"
 alias ca="conda activate"
 alias cee="conda env export --from-history"
 alias cel="conda env list"
@@ -25,20 +25,16 @@ alias gpu="git push -u origin"
 alias gr="git remote -v"
 alias gs="git status"
 alias gu="git commit -am 'up'; git push"
-alias hyd="ssh -tX iweaver@hydra-login01.si.edu bash -l"
+alias hyd="ssh iweaver@hydra-login01.si.edu"
 alias j="julia --project=@."
-alias j1="~/julia-1.0.5/bin/julia"
-alias j5="~/julia-1.5.4/bin/julia"
-alias j7="~/julia-d6b5bf962a/bin/julia"
-alias jp="julia --project=."
 alias jpy="jupyter-notebook"
 alias jtd="jt -t oceans16 -fs 12 -ofs 12 -nfs 12 -cellw 100%"
 alias jtr="jt -r"
 alias jtr="jt -r"
 alias l='ls -CF'
 alias la='ls -A'
-alias ldmint='cp -r ~/config/xfce4 ~/.config/'
-alias ld='dconf load / < ~/config/mint_backup'
+alias ldmint='cp -r ~/Projects/config/xfce4 ~/.config/'
+alias ld='dconf load / < ~/Projects/config/mint_backup'
 alias ll='ls -alF'
 alias ls='ls --color=auto'
 alias n="nvim"
@@ -59,7 +55,7 @@ alias src="source ~/.bashrc"
 alias untar="tar -xvf"
 alias wp="which python"
 alias xclip="xclip -selection c"
-alias zi="nvim ~/.bashrc"
+alias bsh="nvim ~/.bashrc"
 alias rtr="rclone delete trash: --drive-trashed-only --drive-use-trash=false --verbose=2 --fast-list"
 
 export H="iweaver@hydra-login01.si.edu"
@@ -91,8 +87,7 @@ mkcd ()
 }
 
 # Julia bin PATH
-export PATH="$PATH:$HOME/julia-1.6.3/bin"
-export PATH="$PATH:$HOME/.julia/bin"
+export PATH="$PATH:$HOME/julia-1.7.0/bin"
 # Julia autocompletion PATH
 export FPATH="$HOME/.julia/completions:$FPATH"
 
