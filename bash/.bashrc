@@ -1,5 +1,10 @@
-HISTSIZE=-1
-HISTFILESIZE=-1
+HISTCONTROL=ignoredups:erasedups  # no duplicate entries
+HISTSIZE=-1                       # big big history
+HISTFILESIZE=-1                   # big big history
+shopt -s histappend               # append to history, don't overwrite it
+
+# Save and reload the history after each command finishes
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # rsync -azut --no-perms --no-owner --no-group --ignore-times --exclude 'NestorCode' --progress iweaver@emu.astro.puc.cl:/data/ACCESS/IMACS .
 
@@ -25,8 +30,10 @@ alias gpu="git push -u origin"
 alias gr="git remote -v"
 alias gs="git status"
 alias gu="git commit -am 'up'; git push"
-alias hyd="ssh iweaver@hydra-login01.si.edu"
+alias hyd="ssh -t iweaver@hydra-login01.si.edu 'bash'"
 alias j="julia --project=@."
+alias j5="~/julia-1.5.4/bin/julia --project=@."
+alias j6="~/julia-1.6.5/bin/julia --project=@."
 alias jpy="jupyter-notebook"
 alias jtd="jt -t oceans16 -fs 12 -ofs 12 -nfs 12 -cellw 100%"
 alias jtr="jt -r"
@@ -45,6 +52,9 @@ alias o2='cd $CFA/mercedes/O2'
 alias o="xdg-open"
 alias pd="conda deactivate"
 alias pl='julia --project=@. -e "using Pluto;
+    notebook = length(ARGS) == 1 ? ARGS[1] : nothing;
+    Pluto.run(notebook=notebook)"'
+alias pl6='~/julia-1.6.5/bin/julia --project=@. -e "using Pluto;
     notebook = length(ARGS) == 1 ? ARGS[1] : nothing;
     Pluto.run(notebook=notebook)"'
 alias pr='cd ~/Projects'
@@ -87,7 +97,7 @@ mkcd ()
 }
 
 # Julia bin PATH
-export PATH="$PATH:$HOME/julia-1.7.0/bin"
+export PATH="$PATH:/home/mango/julia-1.7.1/bin"
 # Julia autocompletion PATH
 export FPATH="$HOME/.julia/completions:$FPATH"
 
