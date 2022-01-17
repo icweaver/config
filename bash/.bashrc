@@ -16,11 +16,8 @@ alias acc="cd ~/cfa/mercedes/ACCESS"
 alias anc="open -a /Applications/Cisco/Cisco\ AnyConnect\ Secure\ Mobility\ Client.app"
 alias bkmanjaro="cp -r ~/.config/xfce4 ~/config/"
 alias bk="dconf dump / > ~/Projects/config/mint_backup"
-alias ca="conda activate"
-alias cee="conda env export --from-history"
-alias cel="conda env list"
 alias cf="ssh -tX iweaver@mars.cfa.harvard.edu bash"
-alias emu='ssh iweaver@emu.astro.puc.cl'
+alias emu="ssh iweaver@emu.astro.puc.cl"
 alias ga="git add"
 alias gc="git commit -m"
 alias gca="git commit -am"
@@ -38,26 +35,28 @@ alias jpy="jupyter-notebook"
 alias jtd="jt -t oceans16 -fs 12 -ofs 12 -nfs 12 -cellw 100%"
 alias jtr="jt -r"
 alias jtr="jt -r"
-alias l='ls -CF'
-alias la='ls -A'
-alias ldmint='cp -r ~/Projects/config/xfce4 ~/.config/'
-alias ld='dconf load / < ~/Projects/config/mint_backup'
-alias ll='ls -alF'
-alias ls='ls --color=auto'
+alias l="ls -CF"
+alias la="ls -A"
+alias ldmint="cp -r ~/Projects/config/xfce4 ~/.config/"
+alias ld="dconf load / < ~/Projects/config/mint_backup"
+alias ll="ls -alF"
+alias ls="ls --color=auto"
+alias mm="micromamba"
 alias n="nvim"
 alias ni="nvim ~/.config/nvim/init.vim"
 alias nr="nvim -R"
 alias nt="nvim --listen /tmp/nvimsocket"
-alias o2='cd $CFA/mercedes/O2'
+alias o2="cd $CFA/mercedes/O2"
 alias o="xdg-open"
-alias pd="conda deactivate"
+alias pa="micromamba activate gen"
+alias pd="micromamba deactivate"
 alias pl='julia --project=@. -e "using Pluto;
     notebook = length(ARGS) == 1 ? ARGS[1] : nothing;
     Pluto.run(notebook=notebook)"'
 alias pl6='~/julia-1.6.5/bin/julia --project=@. -e "using Pluto;
     notebook = length(ARGS) == 1 ? ARGS[1] : nothing;
     Pluto.run(notebook=notebook)"'
-alias pr='cd ~/Projects'
+alias pr="cd ~/Projects"
 alias r="ranger"
 alias rcl="rclone mount --daemon"
 alias rm="rm -i"
@@ -70,21 +69,22 @@ alias rtr="rclone delete trash: --drive-trashed-only --drive-use-trash=false --v
 
 export H="iweaver@hydra-login01.si.edu"
 
-cec ()
+# micromamba/conda commands
+mec ()
 {
-    conda env create -f "$1"; conda activate "$2"
+    micromamba env create -f "$1"; micromamba activate "$2"
 }
-ceu ()
+meu ()
 {
-    conda env update --file "$1" --prune
+    micromamba env update --file "$1" --prune
 }
-cce ()
+mce ()
 {
-    conda create --name "$1" python="$2"; conda activate "$1"
+    micromamba create --name "$1" python="$2" -c conda-forge; micromamba activate "$1"
 }
-cre ()
+mre ()
 {
-    conda remove --name "$1" --all
+    micromamba remove --name "$1" --all
 }
 
 # Useful functions
@@ -104,29 +104,34 @@ export FPATH="$HOME/.julia/completions:$FPATH"
 # Poetry
 export PATH="/home/mango/.local/bin:$PATH"
 
-#setopt PROMPT_SUBST
-#PROMPT='
-#($CONDA_DEFAULT_ENV) %B%F{208}%n%f%b:%F{40}%~%f%F{220} (${vcs_info_msg_0_}) %f
-#> '
+# Latex
+export PATH="/usr/local/texlive/2021/bin/x86_64-linux:$PATH"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/mango/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/mango/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/mango/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/mango/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+# GTK
+# https://juliagraphics.github.io/Gtk.jl/latest/#Installation-1
+export GTK_PATH=$GTK_PATH:/usr/lib/x86_64-linux-gnu/gtk-3.0
 
+# Prompt
 source /usr/share/bash-completion/completions/git
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-export PS1="\n(\$CONDA_DEFAULT_ENV) \[\e[0;1;38;5;208m\]\u\[\e[0m\]: \[\e[0;1;38;5;40m\]\w\[\e[0m\]\[\e[0;1;38;5;220m\]\$(parse_git_branch)\[\e[0m\]\n> "
+export PS1="\n\[\e[0;1;38;5;208m\]\u\[\e[0m\]: \[\e[0;1;38;5;40m\]\w\[\e[0m\]\[\e[0;1;38;5;220m\]\$(parse_git_branch)\[\e[0m\]\n> "
 PS1=$PS1'\[\e]2;\W\a\]' # set terminal title to cwd
+
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba init' !!
+export MAMBA_EXE="/home/mango/bin/micromamba";
+export MAMBA_ROOT_PREFIX="/home/mango/micromamba";
+__mamba_setup="$('/home/mango/bin/micromamba' shell hook --shell bash --prefix '/home/mango/micromamba' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    if [ -f "/home/mango/micromamba/etc/profile.d/mamba.sh" ]; then
+        . "/home/mango/micromamba/etc/profile.d/mamba.sh"
+    else
+        export PATH="/home/mango/micromamba/bin:$PATH"
+    fi
+fi
+unset __mamba_setup
+# <<< mamba initialize <<<
