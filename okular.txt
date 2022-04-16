@@ -1,0 +1,2 @@
+# yay neovim 0.7!
+nvim --server /tmp/nvim.sock --remote-send "<esc>%lG"
