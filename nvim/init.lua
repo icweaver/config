@@ -29,6 +29,11 @@ opt.wrap = false
 opt.syntax = "off"
 opt.list = true
 
+-- Commands
+-- Remeber last place
+vim.cmd[[autocmd BufRead * autocmd FileType <buffer> ++once
+\ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif]]
+
 -- Mappings
 function map(mode, shortcut, command)
   vim.api.nvim_set_keymap(mode, shortcut, command, { noremap = true, silent = true })
