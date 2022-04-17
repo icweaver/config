@@ -27,6 +27,7 @@ opt.tw = 120
 opt.cc = "+1"
 opt.wrap = false
 opt.syntax = "off"
+opt.list = true
 
 -- Mappings
 function map(mode, shortcut, command)
