@@ -16,6 +16,7 @@ require("onedark").load()
 -- Aliases
 local opt = vim.opt
 local g = vim.g
+local cmd = vim.cmd
 
 -- General
 opt.mouse = 'a'
@@ -28,11 +29,20 @@ opt.cc = "+1"
 opt.wrap = false
 opt.syntax = "off"
 opt.list = true
+opt.expandtab = true
+opt.autoindent = true
 
 -- Commands
 -- Remeber last place
-vim.cmd[[autocmd BufRead * autocmd FileType <buffer> ++once
+cmd[[autocmd BufRead * autocmd FileType <buffer> ++once
 \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif]]
+cmd[[autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2]]
+cmd[[autocmd FileType json syntax match Comment +\/\/.\+$+]]
+cmd[[autocmd FileType julia setlocal spell shiftwidth=4 tabstop=4 softtabstop=4 tw=120 fo=cqt wm=0]]
+cmd[[autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4]]
+cmd[[autocmd FileType tex setlocal shiftwidth=4 tabstop=4 softtabstop=4]]
+cmd[[autocmd FileType markdown setlocal shiftwidth=4 tabstop=4 softtabstop=4]]
+cmd[[autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 softtabstop=2]]
 
 -- Mappings
 function map(mode, shortcut, command)
