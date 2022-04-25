@@ -1,0 +1,4 @@
+# https://wiki.archlinux.org/title/Xdg-utils
+
+> xdg-settings set default-web-browser firefox.desktop
+> xdg-mime default firefox.desktop x-scheme-handler/https x-scheme-handler/http

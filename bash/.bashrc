@@ -43,9 +43,9 @@ alias ll="ls -alF"
 alias ls="ls --color=auto"
 alias mm="micromamba"
 alias n="nvim"
-alias ni="nvim ~/.config/nvim/init.vim"
+alias ni="nvim ~/.config/nvim/init.lua"
 alias nr="nvim -R"
-alias nt="nvim --listen /tmp/nvimsocket"
+alias nt="nvim --listen /tmp/nvim.sock"
 alias o2="cd $CFA/mercedes/O2"
 alias o="xdg-open"
 alias pa="micromamba activate gen"
@@ -72,7 +72,7 @@ export H="iweaver@hydra-login01.si.edu"
 # micromamba/conda commands
 mec ()
 {
-    micromamba env create -f "$1"; micromamba activate "$2"
+    micromamba create -f "$1"; micromamba activate "$2"
 }
 meu ()
 {
@@ -96,8 +96,14 @@ mkcd ()
       cd -P -- "$1"
 }
 
+# For paq
+#XDG_DATA_HOME="$HOME/.local/share"
+
+# Neovim v0.7 (manjaro)
+export PATH="$HOME/.local/bin/nvim-linux64/bin:$PATH"
+
 # Julia bin PATH
-export PATH="$PATH:/home/mango/julia-1.7.1/bin"
+export PATH="$PATH:/home/mango/julia-1.7.2/bin"
 # Julia autocompletion PATH
 export FPATH="$HOME/.julia/completions:$FPATH"
 
@@ -121,16 +127,16 @@ PS1=$PS1'\[\e]2;\W\a\]' # set terminal title to cwd
 
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
-export MAMBA_EXE="/home/mango/bin/micromamba";
+export MAMBA_EXE="/home/mango/Desktop/bin/micromamba";
 export MAMBA_ROOT_PREFIX="/home/mango/micromamba";
-__mamba_setup="$('/home/mango/bin/micromamba' shell hook --shell bash --prefix '/home/mango/micromamba' 2> /dev/null)"
+__mamba_setup="$('/home/mango/Desktop/bin/micromamba' shell hook --shell bash --prefix '/home/mango/micromamba' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__mamba_setup"
 else
-    if [ -f "/home/mango/micromamba/etc/profile.d/mamba.sh" ]; then
-        . "/home/mango/micromamba/etc/profile.d/mamba.sh"
+    if [ -f "/home/mango/micromamba/etc/profile.d/micromamba.sh" ]; then
+        . "/home/mango/micromamba/etc/profile.d/micromamba.sh"
     else
-        export PATH="/home/mango/micromamba/bin:$PATH"
+        export  PATH="/home/mango/micromamba/bin:$PATH"  # extra space after export prevents interference from conda init
     fi
 fi
 unset __mamba_setup
