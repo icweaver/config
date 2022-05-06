@@ -127,7 +127,7 @@ PS1=$PS1'\[\e]2;\W\a\]' # set terminal title to cwd
 
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
-export MAMBA_EXE="/home/mango/Desktop/bin/micromamba";
+export MAMBA_EXE="/home/mango/.local/bin/micromamba";
 export MAMBA_ROOT_PREFIX="/home/mango/micromamba";
 __mamba_setup="$('/home/mango/Desktop/bin/micromamba' shell hook --shell bash --prefix '/home/mango/micromamba' 2> /dev/null)"
 if [ $? -eq 0 ]; then
