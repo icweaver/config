@@ -119,7 +119,7 @@ volume-sound-enabled=false
 [org/cinnamon/desktop/wm/preferences]
 min-window-opacity=30
 mouse-button-modifier=''
-theme='Mint-Y-Dark'
+theme='Mint-Y'
 titlebar-font='Lato 12'
 
 [org/cinnamon/launcher]
@@ -339,12 +339,12 @@ location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=159
+sidebar-width=173
 sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(1393, 1100)
+window-position=(1080, 358)
 window-size=(1078, 822)
 
 [org/mate/panel/general]
@@ -460,7 +460,7 @@ show-location-entry=false
 show-only-directories=false
 
 [org/nemo/window-state]
-geometry='1078x842+1340+1080'
+geometry='1078x842+1491+316'
 maximized=false
 my-computer-expanded=true
 side-pane-view='places'
