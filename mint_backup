@@ -10,7 +10,7 @@ last-active-tab=0
 autorefresh-hours=2
 default-repo-is-ok=true
 install-last-run=1648230368
-refresh-last-run=1648261588
+refresh-last-run=1651857424
 refresh-minutes=10
 show-welcome-page=false
 tracker-grace-period=30
@@ -45,6 +45,9 @@ panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right
 panels-autohide=['1:false']
 panels-enabled=['1:0:bottom']
 panels-height=['1:27']
+
+[org/cinnamon/cinnamon-session]
+quit-time-delay=60
 
 [org/cinnamon/desktop/a11y/keyboard]
 bouncekeys-delay=300
@@ -116,8 +119,12 @@ volume-sound-enabled=false
 [org/cinnamon/desktop/wm/preferences]
 min-window-opacity=30
 mouse-button-modifier=''
-theme='Mint-Y'
+theme='Mint-Y-Dark'
 titlebar-font='Lato 12'
+
+[org/cinnamon/launcher]
+check-frequency=300
+memory-limit=2048
 
 [org/cinnamon/muffin]
 placement-mode='center'
@@ -314,7 +321,7 @@ background-color='rgb(28,36,38)'
 background-transparency-percent=21
 default-size-columns=118
 default-size-rows=43
-font='JuliaMono 12'
+font='DejaVu Sans Mono 12'
 palette=['rgb(46,52,54)', 'rgb(218,91,91)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(148,169,173)', 'rgb(243,156,156)', 'rgb(0,215,0)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
 use-system-font=false
 use-theme-colors=false
