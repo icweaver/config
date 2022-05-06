@@ -10,7 +10,7 @@ last-active-tab=0
 autorefresh-hours=2
 default-repo-is-ok=true
 install-last-run=1648230368
-refresh-last-run=1651857424
+refresh-last-run=1651859011
 refresh-minutes=10
 show-welcome-page=false
 tracker-grace-period=30
@@ -72,13 +72,14 @@ image-source='directory:///home/mango/Projects/config'
 cursor-blink-time=1200
 cursor-size=24
 cursor-theme='Adwaita'
-font-name='Lato 12'
+font-name='Noto Sans CJK HK 12'
 gtk-theme='Mint-Y-Dark-Orange'
 icon-theme='Mint-Y-Dark-Orange'
 scaling-factor=uint32 0
 text-scaling-factor=1.0
 
 [org/cinnamon/desktop/keybindings/media-keys]
+email=['<Super>m']
 kbd-brightness-up=['XF86KbdBrightnessUp', 'F4']
 pause=@as []
 play=['F7']
@@ -120,7 +121,7 @@ volume-sound-enabled=false
 min-window-opacity=30
 mouse-button-modifier=''
 theme='Mint-Y'
-titlebar-font='Lato 12'
+titlebar-font='Noto Sans CJK HK 12'
 
 [org/cinnamon/launcher]
 check-frequency=300
@@ -197,7 +198,7 @@ secondary-click-time=1.2
 show-weekdate=false
 
 [org/gnome/desktop/interface]
-document-font-name='Lato 12'
+document-font-name='Noto Sans CJK HK 12'
 monospace-font-name='JuliaMono 12'
 toolkit-accessibility=false
 
@@ -272,6 +273,14 @@ sidebar-width=200
 window-height=826
 window-width=1080
 
+[org/gnome/font-manager]
+browse-mode='Grid'
+compare-background-color='rgb(255,255,255)'
+compare-foreground-color='rgb(0,0,0)'
+compare-list=@as []
+window-position=(1139, 1399)
+window-size=(900, 600)
+
 [org/gnome/gnome-screenshot]
 border-effect='none'
 delay=3
@@ -321,7 +330,7 @@ background-color='rgb(28,36,38)'
 background-transparency-percent=21
 default-size-columns=118
 default-size-rows=43
-font='DejaVu Sans Mono 12'
+font='JuliaMono 12'
 palette=['rgb(46,52,54)', 'rgb(218,91,91)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(148,169,173)', 'rgb(243,156,156)', 'rgb(0,215,0)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
 use-system-font=false
 use-theme-colors=false
@@ -344,7 +353,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(1080, 358)
+window-position=(1341, 1320)
 window-size=(1078, 822)
 
 [org/mate/panel/general]
@@ -441,7 +450,7 @@ y-bottom=0
 [org/nemo/desktop]
 computer-icon-visible=false
 desktop-layout='true::true'
-font='Lato 12'
+font='Noto Sans CJK HK 12'
 home-icon-visible=false
 volumes-visible=false
 
