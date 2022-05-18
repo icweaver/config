@@ -1,6 +1,8 @@
 import REPL
 import Pkg
 
+ENV[JULIA_EDITOR] = "nvim"
+
 isfile("Project.toml") && Pkg.activate(Base.current_project())
 
 Base.atreplinit() do repl

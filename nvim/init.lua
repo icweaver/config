@@ -3,7 +3,6 @@ require "paq" {
     "navarasu/onedark.nvim",
     {"nvim-treesitter/nvim-treesitter", run=":TSUpdate"},
     "JuliaEditorSupport/julia-vim",
-    "lervag/vimtex",
 }
 
 -- Theme
@@ -87,12 +86,20 @@ require'nvim-treesitter.configs'.setup {
 }
 
 -- LaTex
-g["vimtex_compiler_latexmk"] = {build_dir="./build"}
-g["vimtex_view_general_viewer"] = "okular"
-g["vimtex_view_general_options"] = "--unique file:@pdf\\#src:@line@tex"
+-- g["vimtex_compiler_latexmk"] = {build_dir="./build"}
+-- g["vimtex_view_general_viewer"] = "okular"
+-- g["vimtex_view_general_options"] = "--unique file:@pdf\\#src:@line@tex"
 
 -- Disabled providers}
 g["loaded_python3_provider"] = 0
 g["loaded_perl_provider"] = 0
 g["loaded_ruby_provider"] = 0
 g["loaded_node_provider"] = 0
+
+-- highlight yanked text for 200ms using the "Visual" highlight group
+cmd[[
+augroup highlight_yank
+autocmd!
+au TextYankPost * silent! lua vim.highlight.on_yank({higroup="Visual", timeout=200})
+augroup END
+]]
