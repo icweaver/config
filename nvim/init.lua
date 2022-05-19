@@ -103,3 +103,7 @@ autocmd!
 au TextYankPost * silent! lua vim.highlight.on_yank({higroup="Visual", timeout=200})
 augroup END
 ]]
+
+-- autoread
+opt.updatetime = 100
+cmd[[au CursorHold * checktime | call feedkeys("lh")]]

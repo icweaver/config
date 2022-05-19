@@ -15,7 +15,7 @@ alias ..="cd .."
 alias acc="cd ~/cfa/mercedes/ACCESS"
 alias anc="open -a /Applications/Cisco/Cisco\ AnyConnect\ Secure\ Mobility\ Client.app"
 alias bkmanjaro="cp -r ~/.config/xfce4 ~/config/"
-alias bk="dconf dump / > ~/Projects/config/mint_backup"
+alias bkmint="dconf dump / > ~/Projects/config/mint_backup"
 alias cf="ssh -tX iweaver@mars.cfa.harvard.edu bash"
 alias emu="ssh iweaver@emu.astro.puc.cl"
 alias ga="git add"
@@ -37,8 +37,8 @@ alias jtr="jt -r"
 alias jtr="jt -r"
 alias l="ls -CF"
 alias la="ls -A"
-alias ldmint="cp -r ~/Projects/config/xfce4 ~/.config/"
-alias ld="dconf load / < ~/Projects/config/mint_backup"
+alias ldmanjaro="cp -r ~/Projects/config/xfce4 ~/.config/"
+alias ldmint="dconf load / < ~/Projects/config/mint_backup"
 alias ll="ls -alF"
 alias ls="ls --color=auto"
 alias mm="micromamba"
@@ -52,7 +52,7 @@ alias pa="micromamba activate gen"
 alias pd="micromamba deactivate"
 alias pl='julia --project=@. -e "using Pluto;
     notebook = length(ARGS) == 1 ? ARGS[1] : nothing;
-    Pluto.run(notebook=notebook)"'
+    Pluto.run(notebook=notebook; auto_reload_from_file=true)"'
 alias pl6='~/julia-1.6.5/bin/julia --project=@. -e "using Pluto;
     notebook = length(ARGS) == 1 ? ARGS[1] : nothing;
     Pluto.run(notebook=notebook)"'
@@ -127,9 +127,9 @@ PS1=$PS1'\[\e]2;\W\a\]' # set terminal title to cwd
 
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
-export MAMBA_EXE="/home/mango/.local/bin/micromamba";
+export MAMBA_EXE="/usr/local/bin/micromamba";
 export MAMBA_ROOT_PREFIX="/home/mango/micromamba";
-__mamba_setup="$('/home/mango/Desktop/bin/micromamba' shell hook --shell bash --prefix '/home/mango/micromamba' 2> /dev/null)"
+__mamba_setup="$('/usr/local/bin/micromamba' shell hook --shell bash --prefix '/home/mango/micromamba' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__mamba_setup"
 else
