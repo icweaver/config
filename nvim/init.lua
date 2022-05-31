@@ -16,6 +16,7 @@ require("onedark").load()
 local opt = vim.opt
 local g = vim.g
 local cmd = vim.cmd
+local api = vim.api
 
 -- General
 opt.mouse = 'a'
@@ -107,3 +108,6 @@ augroup END
 -- autoread
 opt.updatetime = 100
 cmd[[au CursorHold * checktime | call feedkeys("lh")]]
+
+-- copy/paste global
+api.nvim_set_keymap("", "<leader>y", '"+y', { silent = true })
