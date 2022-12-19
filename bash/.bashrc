@@ -29,8 +29,6 @@ alias gs="git status"
 alias gu="git commit -am 'up'; git push"
 alias hyd="ssh -t iweaver@hydra-login01.si.edu 'bash'"
 alias j="julia --project=@."
-alias j5="~/julia-1.5.4/bin/julia --project=@."
-alias j6="~/julia-1.6.5/bin/julia --project=@."
 alias jpy="jupyter-notebook"
 alias jtd="jt -t oceans16 -fs 12 -ofs 12 -nfs 12 -cellw 100%"
 alias jtr="jt -r"
@@ -53,7 +51,7 @@ alias pd="micromamba deactivate"
 alias pl='julia --project=@. -e "using Pluto;
     notebook = length(ARGS) == 1 ? ARGS[1] : nothing;
     Pluto.run(notebook=notebook; auto_reload_from_file=true)"'
-alias pl6='~/julia-1.6.5/bin/julia --project=@. -e "using Pluto;
+alias plm='julia --project=$HOME/Projects/pluto -e "using Pluto;
     notebook = length(ARGS) == 1 ? ARGS[1] : nothing;
     Pluto.run(notebook=notebook)"'
 alias pr="cd ~/Projects"
@@ -72,7 +70,7 @@ export H="iweaver@hydra-login01.si.edu"
 # micromamba/conda commands
 mec ()
 {
-    micromamba create -f "$1"; micromamba activate "$2"
+    micromamba env create -f "$1"; micromamba activate "$2"
 }
 meu ()
 {
@@ -101,9 +99,10 @@ mkcd ()
 
 # Neovim v0.7 (manjaro)
 export PATH="$HOME/.local/bin/nvim-linux64/bin:$PATH"
+export EDITOR=$(which nvim)
 
 # Julia bin PATH
-export PATH="$PATH:/home/mango/julia-1.7.2/bin"
+export PATH="$PATH:/home/mango/julia-1.8.0/bin"
 # Julia autocompletion PATH
 export FPATH="$HOME/.julia/completions:$FPATH"
 
