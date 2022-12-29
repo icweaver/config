@@ -99,6 +99,15 @@ fi
 unset __mamba_setup
 # <<< mamba initialize <<<
 
+
+# >>> juliaup initialize >>>
+# !! Contents within this block are managed by juliaup !!
+
+case ":$PATH:" in *:/home/mango/.juliaup/bin:*);; *)
+    export PATH=/home/mango/.juliaup/bin${PATH:+:${PATH}};;
+esac
+# <<< juliaup initialize <<<
+
 # Prompt
 source /usr/share/bash-completion/completions/git
 parse_git_branch() {
