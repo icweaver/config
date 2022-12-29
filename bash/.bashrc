@@ -1,13 +1,3 @@
-HISTCONTROL=ignoredups:erasedups  # no duplicate entries
-HISTSIZE=-1                       # big big history
-HISTFILESIZE=-1                   # big big history
-shopt -s histappend               # append to history, don't overwrite it
-
-# Save and reload the history after each command finishes
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
-
-# rsync -azut --no-perms --no-owner --no-group --ignore-times --exclude 'NestorCode' --progress iweaver@emu.astro.puc.cl:/data/ACCESS/IMACS .
-
 # Aliases
 alias rse="rsync -avvPhz --ignore-existing iweaver@emu.astro.puc.cl:/data/ACCESS/./IMACS ."
 alias rse2="rsync -trluhvv --delete --stats --inplace iweaver@emu.astro.puc.cl:/data/ACCESS/./IMACS ~/ACCESS/"
@@ -65,9 +55,16 @@ alias xclip="xclip -selection c"
 alias bsh="nvim ~/.bashrc"
 alias rtr="rclone delete trash: --drive-trashed-only --drive-use-trash=false --verbose=2 --fast-list"
 
-export H="iweaver@hydra-login01.si.edu"
+# Neovim v0.7 (manjaro)
+export PATH="$HOME/.local/bin/nvim-linux64/bin:$PATH"
+export EDITOR=$(which nvim)
 
-# micromamba/conda commands
+# Useful functions
+mkcd ()
+{
+    mkdir -p -- "$1" &&
+      cd -P -- "$1"
+}
 mec ()
 {
     micromamba env create -f "$1"; micromamba activate "$2"
@@ -85,45 +82,6 @@ mre ()
     micromamba remove --name "$1" --all
 }
 
-# Useful functions
-rd () { rsync -az --progress iweaver@hydra-login01.si.edu:"$1" "$2"; }
-ru () { rsync -az --progress "$1" iweaver@hydra-login01.si.edu:"$2"; }
-mkcd ()
-{
-    mkdir -p -- "$1" &&
-      cd -P -- "$1"
-}
-
-# For paq
-#XDG_DATA_HOME="$HOME/.local/share"
-
-# Neovim v0.7 (manjaro)
-export PATH="$HOME/.local/bin/nvim-linux64/bin:$PATH"
-export EDITOR=$(which nvim)
-
-# Julia bin PATH
-export PATH="$PATH:/home/mango/julia-1.8.0/bin"
-# Julia autocompletion PATH
-export FPATH="$HOME/.julia/completions:$FPATH"
-
-# Poetry
-export PATH="/home/mango/.local/bin:$PATH"
-
-# Latex
-export PATH="/usr/local/texlive/2021/bin/x86_64-linux:$PATH"
-
-# GTK
-# https://juliagraphics.github.io/Gtk.jl/latest/#Installation-1
-export GTK_PATH=$GTK_PATH:/usr/lib/x86_64-linux-gnu/gtk-3.0
-
-# Prompt
-source /usr/share/bash-completion/completions/git
-parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-export PS1="\n\[\e[0;1;38;5;208m\]\u\[\e[0m\]: \[\e[0;1;38;5;40m\]\w\[\e[0m\]\[\e[0;1;38;5;220m\]\$(parse_git_branch)\[\e[0m\]\n> "
-PS1=$PS1'\[\e]2;\W\a\]' # set terminal title to cwd
-
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
 export MAMBA_EXE="/usr/local/bin/micromamba";
@@ -140,3 +98,11 @@ else
 fi
 unset __mamba_setup
 # <<< mamba initialize <<<
+
+# Prompt
+source /usr/share/bash-completion/completions/git
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\n\[\e[0;1;38;5;208m\]\u\[\e[0m\]: \[\e[0;1;38;5;40m\]\w\[\e[0m\]\[\e[0;1;38;5;220m\]\$(parse_git_branch)\[\e[0m\]\n> "
+PS1=$PS1'\[\e]2;\W\a\]' # set terminal title to cwd
