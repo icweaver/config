@@ -1,6 +1,6 @@
 [com/linuxmint/install]
 flatpak-remotes=['flathub::https://dl.flathub.org/repo/::False']
-installed-apps=['apt:adb', 'apt:atom', 'apt:build-essential', 'apt:chromium', 'apt:dmtracedump', 'apt:etc1tool', 'apt:f2fs-tools', 'apt:fastboot', 'apt:gcc-multilib', 'apt:git', 'apt:hprof-conv', 'apt:linux-system76', 'apt:neovim', 'apt:okular', 'apt:rclone', 'apt:samba', 'apt:simplescreenrecorder', 'apt:slack-desktop', 'apt:sqlite3', 'apt:system76-acpi-dkms', 'apt:system76-driver', 'apt:system76-power', 'apt:thingy', 'apt:tree', 'apt:xclip', 'apt:xzdec', 'apt:zoom', 'apt:zsh', 'apt:zulip']
+installed-apps=['apt:chromium', 'apt:firmware-manager', 'apt:firmware-manager-notify', 'apt:firmware-manager-shared', 'apt:font-manager', 'apt:git', 'apt:git-man', 'apt:gnome-shell-extension-system76-power', 'apt:hidpi-daemon', 'apt:ipp-usb', 'apt:kaccounts-providers', 'apt:kactivities-bin', 'apt:kactivitymanagerd', 'apt:kde-cli-tools', 'apt:kdeconnect', 'apt:keditbookmarks', 'apt:kinit', 'apt:kio', 'apt:kpackagelauncherqml', 'apt:kpackagetool5', 'apt:kpeople-vcard', 'apt:kwayland-integration', 'apt:linux-headers-5.17.5-76051705', 'apt:linux-headers-5.18.10-76051810', 'apt:linux-modules-5.17.5-76051705-generic', 'apt:linux-modules-5.18.10-76051810-generic', 'apt:linux-system76', 'apt:neovim', 'apt:okular', 'apt:okular-extra-backends', 'apt:peek', 'apt:phonon4qt5', 'apt:phonon4qt5-backend-vlc', 'apt:plasma-framework', 'apt:qml-module-org-kde-bluezqt', 'apt:qml-module-org-kde-kconfig', 'apt:qml-module-org-kde-kirigami2', 'apt:qml-module-org-kde-kquickcontrols', 'apt:qml-module-org-kde-kquickcontrolsaddons', 'apt:qml-module-org-kde-people', 'apt:qml-module-org-kde-purpose', 'apt:qml-module-qtgraphicaleffects', 'apt:qml-module-qtqml-models2', 'apt:qml-module-qtquick-controls', 'apt:qml-module-qtquick-controls2', 'apt:qml-module-qtquick-dialogs', 'apt:qml-module-qtquick-layouts', 'apt:qml-module-qtquick-privatewidgets', 'apt:qml-module-qtquick-templates2', 'apt:qml-module-qtquick-window2', 'apt:qml-module-qtquick2', 'apt:qml-module-ubuntu-onlineaccounts', 'apt:qtspeech5-flite-plugin', 'apt:qtwayland5', 'apt:rclone', 'apt:sane', 'apt:sane-airscan', 'apt:signon-plugin-oauth2', 'apt:simplescreenrecorder', 'apt:slack-desktop', 'apt:snmp', 'apt:sonnet-plugins', 'apt:sshfs', 'apt:system76-acpi-dkms', 'apt:system76-driver', 'apt:system76-firmware-daemon', 'apt:system76-oled', 'apt:system76-power', 'apt:teams', 'apt:vlc-plugin-base', 'apt:vlc-plugin-video-output', 'apt:xclip', 'apt:xsane', 'apt:zoom', 'apt:zulip']
 
 [com/linuxmint/mintmenu/plugins/applications]
 favorite-apps-list=['location:/usr/share/applications/firefox.desktop\n', 'location:/usr/share/applications/thunderbird.desktop\n', 'location:/usr/share/applications/pix.desktop\n', 'location:/usr/share/applications/rhythmbox.desktop\n', 'separator\n', 'location:/usr/share/applications/gnome-calculator.desktop\n', 'location:/usr/share/applications/gcalctool.desktop\n', 'location:/usr/share/applications/org.gnome.Calculator.desktop\n', 'location:/usr/share/applications/xed.desktop\n', 'location:/usr/share/applications/mate-terminal.desktop\n', 'location:/usr/share/applications/gnome-terminal.desktop\n', 'location:/usr/share/applications/mate-volume-control.desktop\n', 'location:/usr/share/applications/cinnamon-settings-sound.desktop\n', 'location:/usr/share/applications/xfce4-mixer.desktop\n', 'separator\n', 'location:/usr/share/applications/mate-display-properties.desktop\n', 'location:/usr/share/applications/cinnamon-display-panel.desktop\n', 'location:/usr/share/applications/xfce-display-settings.desktop\n', 'location:/usr/share/applications/mate-system-monitor.desktop\n', 'location:/usr/share/applications/gnome-system-monitor.desktop\n', 'location:/usr/share/applications/xfce4-taskmanager.desktop\n']
@@ -10,10 +10,12 @@ last-active-tab=0
 ignored-reports=['timeshift-no-setup']
 
 [com/linuxmint/updates]
+auto-update-cinnamon-spices=true
+auto-update-flatpaks=true
 autorefresh-hours=2
 default-repo-is-ok=true
-install-last-run=1651859146
-refresh-last-run=1651859011
+install-last-run=1673325054
+refresh-last-run=1673459268
 refresh-minutes=10
 show-welcome-page=false
 tracker-grace-period=30
@@ -23,23 +25,37 @@ window-height=570
 window-pane-position=280
 window-width=790
 
+[com/uploadedlobster/peek]
+persist-save-folder='/home/mango/Desktop'
+persist-window-geometry=(274, 73, 877, 741)
+
+[desktop/ibus/general]
+preload-engines=@as []
+version='1.5.22'
+
 [io/github/celluloid-player/celluloid]
 settings-migrated=true
 
 [io/github/celluloid-player/celluloid/window-state]
-height=709
+height=634
 loop-playlist=false
 maximized=false
 playlist-width=250
 show-playlist=false
 volume=1.0
-width=819
+width=800
+
+[org/blueberry]
+obex-enabled=false
+tray-enabled=true
 
 [org/cinnamon]
 alttab-switcher-delay=100
 app-menu-label='Menu'
 command-history=['r']
-enabled-applets=['panel1:right:4:systray@cinnamon.org:18', 'panel1:right:5:xapp-status@cinnamon.org:19', 'panel1:right:6:keyboard@cinnamon.org:20', 'panel1:right:7:notifications@cinnamon.org:21', 'panel1:right:8:printers@cinnamon.org:22', 'panel1:right:9:removable-drives@cinnamon.org:23', 'panel1:right:10:network@cinnamon.org:26', 'panel1:right:11:sound@cinnamon.org:27', 'panel1:right:12:power@cinnamon.org:28', 'panel1:right:13:calendar@cinnamon.org:29', 'panel1:left:0:menu@cinnamon.org:32', 'panel1:left:1:grouped-window-list@cinnamon.org:36']
+desklet-snap-interval=25
+enabled-applets=['panel1:right:4:systray@cinnamon.org:18', 'panel1:right:5:xapp-status@cinnamon.org:19', 'panel1:right:6:keyboard@cinnamon.org:20', 'panel1:right:7:notifications@cinnamon.org:21', 'panel1:right:9:removable-drives@cinnamon.org:23', 'panel1:right:10:network@cinnamon.org:26', 'panel1:right:11:sound@cinnamon.org:27', 'panel1:right:12:power@cinnamon.org:28', 'panel1:right:13:calendar@cinnamon.org:29', 'panel1:left:0:menu@cinnamon.org:32', 'panel1:left:1:grouped-window-list@cinnamon.org:36']
+enabled-desklets=@as []
 next-applet-id=39
 panel-edit-mode=false
 panel-launchers=['DEPRECATED']
@@ -51,6 +67,9 @@ panels-height=['1:27']
 
 [org/cinnamon/cinnamon-session]
 quit-time-delay=60
+
+[org/cinnamon/control-center/display]
+show-fractional-scaling-controls=true
 
 [org/cinnamon/desktop/a11y/keyboard]
 bouncekeys-delay=300
@@ -65,17 +84,19 @@ dwell-time=1.2
 secondary-click-time=1.2
 
 [org/cinnamon/desktop/background]
+picture-options='zoom'
 picture-uri='file:///home/mango/Projects/config/desktop.JPG'
 
 [org/cinnamon/desktop/background/slideshow]
 delay=15
-image-source='directory:///home/mango/Projects/config'
+image-source='directory:///home/mango/Pictures'
 
 [org/cinnamon/desktop/interface]
+clock-show-seconds=true
 cursor-blink-time=1200
 cursor-size=24
 cursor-theme='Adwaita'
-font-name='Noto Sans CJK HK 12'
+font-name='Ubuntu 12'
 gtk-theme='Mint-Y-Dark-Orange'
 icon-theme='Mint-Y-Dark-Orange'
 scaling-factor=uint32 0
@@ -110,6 +131,11 @@ push-tile-left=@as []
 push-tile-right=@as []
 push-tile-up=@as []
 
+[org/cinnamon/desktop/media-handling]
+autorun-x-content-ignore=@as []
+autorun-x-content-open-folder=@as []
+autorun-x-content-start-app=['x-content/unix-software']
+
 [org/cinnamon/desktop/notifications]
 display-notifications=false
 
@@ -123,14 +149,17 @@ volume-sound-enabled=false
 [org/cinnamon/desktop/wm/preferences]
 min-window-opacity=30
 mouse-button-modifier=''
+num-workspaces=2
 theme='Mint-Y'
-titlebar-font='Noto Sans CJK HK 12'
+titlebar-font='Ubuntu 12'
+workspace-names=@as []
 
 [org/cinnamon/launcher]
 check-frequency=300
 memory-limit=2048
 
 [org/cinnamon/muffin]
+edge-tiling=true
 placement-mode='center'
 resize-threshold=24
 tile-hud-threshold=25
@@ -146,9 +175,21 @@ drag-threshold=8
 motion-threshold=1
 
 [org/cinnamon/settings-daemon/peripherals/touchpad]
+custom-threshold=false
+disable-while-typing=true
+disable-with-external-mouse=false
 horizontal-scrolling=true
 motion-threshold=1
+tap-to-click=true
 touchpad-enabled=true
+
+[org/cinnamon/settings-daemon/plugins/power]
+lid-close-ac-action='suspend'
+lid-close-battery-action='suspend'
+sleep-display-ac=900
+sleep-display-battery=600
+sleep-inactive-ac-timeout=1800
+sleep-inactive-battery-timeout=900
 
 [org/cinnamon/sounds]
 login-enabled=false
@@ -163,7 +204,7 @@ name='Mint-Y-Dark-Orange'
 
 [org/gnome/baobab/ui]
 window-size=(960, 600)
-window-state=87042
+window-state=87168
 
 [org/gnome/calculator]
 accuracy=9
@@ -177,14 +218,17 @@ source-currency=''
 source-units='degree'
 target-currency=''
 target-units='radian'
-window-position=(1705, 1331)
+window-position=(1250, 476)
 word-size=64
 
 [org/gnome/calendar]
 active-view='month'
 window-maximized=false
-window-position=(1276, 1162)
-window-size=(800, 600)
+window-position=(141, 0)
+window-size=(1459, 826)
+
+[org/gnome/charmap/window-state]
+size=(900, 491)
 
 [org/gnome/desktop/a11y/applications]
 screen-keyboard-enabled=false
@@ -201,7 +245,8 @@ secondary-click-time=1.2
 show-weekdate=false
 
 [org/gnome/desktop/interface]
-document-font-name='Noto Sans CJK HK 12'
+clock-format='24h'
+document-font-name='Ubuntu 12'
 monospace-font-name='JuliaMono 12'
 toolkit-accessibility=false
 
@@ -211,6 +256,16 @@ disable-microphone=false
 [org/gnome/evolution-data-server]
 migrated=true
 network-monitor-gio-name=''
+
+[org/gnome/evolution-data-server/calendar]
+notify-completed-tasks=false
+notify-past-events=false
+notify-window-height=115
+notify-window-on-top=false
+notify-window-width=524
+notify-window-x=126
+notify-window-y=348
+reminders-past=@as []
 
 [org/gnome/evolution]
 version='3.36.5'
@@ -264,12 +319,17 @@ y=29
 recreate-folders=true
 skip-newer=false
 
+[org/gnome/file-roller/dialogs/new]
+default-extension='.zip'
+encrypt-header=false
+volume-size=0
+
 [org/gnome/file-roller/listing]
 list-mode='as-folder'
 name-column-width=250
 show-path=false
-sort-method='size'
-sort-type='descending'
+sort-method='name'
+sort-type='ascending'
 
 [org/gnome/file-roller/ui]
 sidebar-width=200
@@ -281,22 +341,30 @@ browse-mode='Grid'
 compare-background-color='rgb(255,255,255)'
 compare-foreground-color='rgb(0,0,0)'
 compare-list=@as []
-window-position=(1139, 1399)
+preview-page=0
+preview-text="\n    The quick brown fox jumps over the lazy dog.\n\n    ABCDEFGHIJKLMNOPQRSTUVWXYZ\n    abcdefghijklmnopqrstuvwxyz\n    1234567890.:,;(*!?')\n\n    "
+selected-category='0'
+selected-font='0'
+window-position=(503, 1215)
 window-size=(900, 600)
+
+[org/gnome/font-manager/font-viewer]
+window-position=(1161, 1235)
+window-size=(600, 400)
 
 [org/gnome/gnome-screenshot]
 border-effect='none'
-delay=3
-include-border=true
+delay=0
+include-border=false
 include-pointer=false
 last-save-directory='file:///home/mango/Desktop'
 
 [org/gnome/gnome-system-monitor]
-current-tab='resources'
+current-tab='processes'
 maximized=false
 show-dependencies=false
 show-whose-processes='user'
-window-state=(959, 867, 119, 2)
+window-state=(959, 842, 119, 0)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-6-visible=true
@@ -313,9 +381,108 @@ options=['grp\tgrp:win_space_toggle', 'terminate\tterminate:ctrl_alt_bksp', 'cap
 [org/gnome/nm-applet]
 disable-connected-notifications=true
 
+[org/gnome/nm-applet/eap/01b663ea-2424-4935-9cd7-278a492f6ed3]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/0bc84e5f-ac02-472d-87ab-b9d081347c58]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/2006aa62-e16a-4f2c-a85c-a69d04707739]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/243806bd-5c59-4a74-aff9-a03e7e2016d9]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/262e4f42-c8ae-4105-855f-cf8c4ec3511a]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/32e1d719-c48e-4418-8f7e-533964045eda]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/365eba1c-b321-4dee-b468-a9448c27be9d]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/3a218197-9b5d-41b6-a085-330950b552b0]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/3f8de2a7-b678-40ef-ba13-e2ce3cf9e6d0]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/4fb335e1-419d-45e0-8954-1d5d0bdd5385]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/504191b4-f416-4f1b-a8c7-efc4bdba6ae1]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/580198ab-4b0b-428c-8e28-6b08dc35f72e]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/6e9cb480-a9d2-4529-91e6-c46a2f9bafdb]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/8b32d611-2ead-431a-82ec-3ba157eef6da]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/be8afe5c-f396-4407-956e-2af67d1eed5d]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/c4ab7085-2945-4604-9f69-7d0424a1b06e]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/c9e87c8f-0b42-4dfc-bf88-5505824554e0]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/rhythmbox]
+position=(-1, -1)
+
+[org/gnome/rhythmbox/library/source]
+show-browser=true
+
+[org/gnome/rhythmbox/plugins]
+active-plugins=['tray_icon', 'notification', 'android', 'audioscrobbler', 'generic-player', 'iradio', 'mpris', 'ipod', 'dbus-media-server', 'mtpdevice', 'mmkeys', 'daap', 'power-manager', 'audiocd', 'rb', 'artsearch']
+seen-plugins=['tray_icon', 'notification', 'audioscrobbler', 'grilo', 'mpris', 'ipod', 'dbus-media-server', 'mtpdevice', 'fmradio', 'daap', 'pythonconsole', 'rblirc', 'rb', 'replaygain', 'lyrics', 'listenbrainz', 'artsearch', 'magnatune', 'im-status', 'soundcloud', 'webremote']
+
+[org/gnome/rhythmbox/plugins/audioscrobbler/Last.fm]
+scrobbling-enabled=true
+
+[org/gnome/rhythmbox/plugins/audioscrobbler/Libre.fm]
+scrobbling-enabled=true
+
+[org/gnome/rhythmbox/plugins/iradio]
+initial-stations-loaded=true
+
+[org/gnome/rhythmbox/plugins/iradio/source]
+show-browser=true
+
+[org/gnome/rhythmbox/podcast/source]
+show-browser=true
+
+[org/gnome/rhythmbox/rhythmdb]
+locations=['file:///home/mango/Music']
+
+[org/gnome/simple-scan]
+document-type='photo'
+page-side='front'
+save-directory='/home/mango/Desktop'
+selected-device='airscan:e0:HP DeskJet 2700 series (USB)'
+text-dpi=1200
 
 [org/gnome/terminal/legacy]
 default-show-menubar=false
@@ -325,8 +492,8 @@ mnemonics-enabled=true
 find-previous='disabled'
 new-tab='<Primary><Shift>t'
 new-window='<Primary><Shift>n'
-next-tab='<Primary><Shift>l'
-prev-tab='<Primary><Shift>h'
+next-tab='<Primary>Page_Down'
+prev-tab='<Primary>Page_Up'
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 background-color='rgb(28,36,38)'
@@ -356,7 +523,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(1341, 1320)
+window-position=(445, 20)
 window-size=(1078, 822)
 
 [org/mate/panel/general]
@@ -453,7 +620,7 @@ y-bottom=0
 [org/nemo/desktop]
 computer-icon-visible=false
 desktop-layout='true::true'
-font='Noto Sans CJK HK 12'
+font='Ubuntu 12'
 home-icon-visible=false
 volumes-visible=false
 
@@ -472,23 +639,24 @@ show-location-entry=false
 show-only-directories=false
 
 [org/nemo/window-state]
-geometry='1078x842+1491+316'
+geometry='1234x842+182+0'
 maximized=false
 my-computer-expanded=true
+network-expanded=true
 side-pane-view='places'
-sidebar-bookmark-breakpoint=4
+sidebar-bookmark-breakpoint=2
 sidebar-width=210
 start-with-menu-bar=false
 start-with-sidebar=true
 start-with-toolbar=false
 
 [org/x/editor/plugins]
-active-plugins=['sort', 'modelines', 'joinlines', 'filebrowser', 'spell', 'textsize', 'bracketcompletion', 'docinfo', 'open-uri-context-menu', 'time']
+active-plugins=['bracketcompletion', 'docinfo', 'open-uri-context-menu', 'joinlines', 'spell', 'filebrowser', 'time', 'sort', 'textsize', 'modelines']
 
 [org/x/editor/plugins/filebrowser/on-load]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/mango/.cache/.fr-3DLVmN/Diamond-Lowe_Dissertation_2020_SourceFiles'
+virtual-root='file:///home/mango/Downloads'
 
 [org/x/editor/preferences/ui]
 statusbar-visible=true
@@ -500,14 +668,40 @@ side-panel-size=200
 size=(1078, 671)
 state=87168
 
+[org/x/pix/browser]
+browser-sidebar-width=328
+filterbar-visible=true
+maximized=false
+properties-visible=true
+show-thumbnails=true
+sort-inverse=false
+sort-type='file::mtime'
+startup-current-file='file://~/Pictures/IMG_E0124.JPG'
+startup-location='file://~/Pictures'
+thumbnail-list-size=0
+viewer-sidebar='hidden'
+window-height=675
+window-width=1195
+
+[org/x/pix/data-migration]
+catalogs-2-10=true
+
+[org/x/pix/general]
+active-extensions=['23hq', 'bookmarks', 'burn_disc', 'catalogs', 'change_date', 'comments', 'contact_sheet', 'convert_format', 'desktop_background', 'edit_metadata', 'exiv2_tools', 'facebook', 'file_manager', 'file_tools', 'find_duplicates', 'flicker', 'gstreamer_tools', 'gstreamer_utils', 'image_print', 'image_rotation', 'image_viewer', 'importer', 'jpeg_utils', 'list_tools', 'oauth', 'photo_importer', 'photobucket', 'picasaweb', 'raw_files', 'red_eye_removal', 'rename_series', 'resize_images', 'search', 'selections', 'slideshow', 'webalbums']
+
+[org/x/pix/photo-importer]
+delete-from-device=false
+
 [org/x/reader]
+document-directory=@ms 'file:///home/mango/Desktop'
 show-menubar=false
 show-toolbar=false
 
 [org/x/reader/default]
-window-ratio=(2.2058823529411766, 1.0631313131313131)
+window-ratio=(2.464864864864865, 1.0)
 
 [org/x/viewer/ui]
+image-gallery=false
 statusbar=true
 toolbar=true
 
