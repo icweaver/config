@@ -14,8 +14,8 @@ auto-update-cinnamon-spices=true
 auto-update-flatpaks=true
 autorefresh-hours=2
 default-repo-is-ok=true
-install-last-run=1673325054
-refresh-last-run=1673459268
+install-last-run=1673900388
+refresh-last-run=1673918717
 refresh-minutes=10
 show-welcome-page=false
 tracker-grace-period=30
@@ -523,7 +523,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(445, 20)
+window-position=(393, 20)
 window-size=(1078, 822)
 
 [org/mate/panel/general]
@@ -633,7 +633,7 @@ default-folder-viewer='list-view'
 ignore-view-metadata=true
 inherit-folder-viewer=true
 show-full-path-titles=true
-show-location-entry=false
+show-location-entry=true
 
 [org/nemo/sidebar-panels/tree]
 show-only-directories=false
@@ -676,8 +676,8 @@ properties-visible=true
 show-thumbnails=true
 sort-inverse=false
 sort-type='file::mtime'
-startup-current-file='file://~/Pictures/IMG_E0124.JPG'
-startup-location='file://~/Pictures'
+startup-current-file=''
+startup-location='file://~/Projects/config'
 thumbnail-list-size=0
 viewer-sidebar='hidden'
 window-height=675
@@ -688,6 +688,13 @@ catalogs-2-10=true
 
 [org/x/pix/general]
 active-extensions=['23hq', 'bookmarks', 'burn_disc', 'catalogs', 'change_date', 'comments', 'contact_sheet', 'convert_format', 'desktop_background', 'edit_metadata', 'exiv2_tools', 'facebook', 'file_manager', 'file_tools', 'find_duplicates', 'flicker', 'gstreamer_tools', 'gstreamer_utils', 'image_print', 'image_rotation', 'image_viewer', 'importer', 'jpeg_utils', 'list_tools', 'oauth', 'photo_importer', 'photobucket', 'picasaweb', 'raw_files', 'red_eye_removal', 'rename_series', 'resize_images', 'search', 'selections', 'slideshow', 'webalbums']
+
+[org/x/pix/importer]
+destination='file:///home/mango/Projects/config'
+subfolder-custom-format=''
+subfolder-format='yyyymmdd'
+subfolder-single=false
+subfolder-type='none'
 
 [org/x/pix/photo-importer]
 delete-from-device=false
