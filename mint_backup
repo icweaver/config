@@ -1,6 +1,6 @@
 [com/linuxmint/install]
 flatpak-remotes=['flathub::https://dl.flathub.org/repo/::False']
-installed-apps=['apt:chromium', 'apt:firmware-manager', 'apt:firmware-manager-notify', 'apt:firmware-manager-shared', 'apt:font-manager', 'apt:git', 'apt:git-man', 'apt:gnome-shell-extension-system76-power', 'apt:hidpi-daemon', 'apt:ipp-usb', 'apt:kaccounts-providers', 'apt:kactivities-bin', 'apt:kactivitymanagerd', 'apt:kde-cli-tools', 'apt:kdeconnect', 'apt:keditbookmarks', 'apt:kinit', 'apt:kio', 'apt:kpackagelauncherqml', 'apt:kpackagetool5', 'apt:kpeople-vcard', 'apt:kwayland-integration', 'apt:linux-headers-5.17.5-76051705', 'apt:linux-headers-5.18.10-76051810', 'apt:linux-modules-5.17.5-76051705-generic', 'apt:linux-modules-5.18.10-76051810-generic', 'apt:linux-system76', 'apt:neovim', 'apt:okular', 'apt:okular-extra-backends', 'apt:peek', 'apt:phonon4qt5', 'apt:phonon4qt5-backend-vlc', 'apt:plasma-framework', 'apt:qml-module-org-kde-bluezqt', 'apt:qml-module-org-kde-kconfig', 'apt:qml-module-org-kde-kirigami2', 'apt:qml-module-org-kde-kquickcontrols', 'apt:qml-module-org-kde-kquickcontrolsaddons', 'apt:qml-module-org-kde-people', 'apt:qml-module-org-kde-purpose', 'apt:qml-module-qtgraphicaleffects', 'apt:qml-module-qtqml-models2', 'apt:qml-module-qtquick-controls', 'apt:qml-module-qtquick-controls2', 'apt:qml-module-qtquick-dialogs', 'apt:qml-module-qtquick-layouts', 'apt:qml-module-qtquick-privatewidgets', 'apt:qml-module-qtquick-templates2', 'apt:qml-module-qtquick-window2', 'apt:qml-module-qtquick2', 'apt:qml-module-ubuntu-onlineaccounts', 'apt:qtspeech5-flite-plugin', 'apt:qtwayland5', 'apt:rclone', 'apt:sane', 'apt:sane-airscan', 'apt:signon-plugin-oauth2', 'apt:simplescreenrecorder', 'apt:slack-desktop', 'apt:snmp', 'apt:sonnet-plugins', 'apt:sshfs', 'apt:system76-acpi-dkms', 'apt:system76-driver', 'apt:system76-firmware-daemon', 'apt:system76-oled', 'apt:system76-power', 'apt:teams', 'apt:vlc-plugin-base', 'apt:vlc-plugin-video-output', 'apt:xclip', 'apt:xsane', 'apt:zoom', 'apt:zulip']
+installed-apps=['apt:chromium', 'apt:docker.io', 'apt:firefox-geckodriver', 'apt:firmware-manager', 'apt:firmware-manager-notify', 'apt:firmware-manager-shared', 'apt:font-manager', 'apt:git', 'apt:git-man', 'apt:gnome-shell-extension-system76-power', 'apt:hidpi-daemon', 'apt:ipp-usb', 'apt:kaccounts-providers', 'apt:kactivities-bin', 'apt:kactivitymanagerd', 'apt:kde-cli-tools', 'apt:kdeconnect', 'apt:keditbookmarks', 'apt:kinit', 'apt:kio', 'apt:kpackagelauncherqml', 'apt:kpackagetool5', 'apt:kpeople-vcard', 'apt:kwayland-integration', 'apt:linux-headers-5.17.5-76051705', 'apt:linux-headers-5.18.10-76051810', 'apt:linux-modules-5.17.5-76051705-generic', 'apt:linux-modules-5.18.10-76051810-generic', 'apt:linux-system76', 'apt:neovim', 'apt:okular', 'apt:okular-extra-backends', 'apt:peek', 'apt:phonon4qt5', 'apt:phonon4qt5-backend-vlc', 'apt:plasma-framework', 'apt:qml-module-org-kde-bluezqt', 'apt:qml-module-org-kde-kconfig', 'apt:qml-module-org-kde-kirigami2', 'apt:qml-module-org-kde-kquickcontrols', 'apt:qml-module-org-kde-kquickcontrolsaddons', 'apt:qml-module-org-kde-people', 'apt:qml-module-org-kde-purpose', 'apt:qml-module-qtgraphicaleffects', 'apt:qml-module-qtqml-models2', 'apt:qml-module-qtquick-controls', 'apt:qml-module-qtquick-controls2', 'apt:qml-module-qtquick-dialogs', 'apt:qml-module-qtquick-layouts', 'apt:qml-module-qtquick-privatewidgets', 'apt:qml-module-qtquick-templates2', 'apt:qml-module-qtquick-window2', 'apt:qml-module-qtquick2', 'apt:qml-module-ubuntu-onlineaccounts', 'apt:qtspeech5-flite-plugin', 'apt:qtwayland5', 'apt:rclone', 'apt:sane', 'apt:sane-airscan', 'apt:signon-plugin-oauth2', 'apt:simplescreenrecorder', 'apt:slack-desktop', 'apt:snmp', 'apt:sonnet-plugins', 'apt:sshfs', 'apt:system76-acpi-dkms', 'apt:system76-driver', 'apt:system76-firmware-daemon', 'apt:system76-oled', 'apt:system76-power', 'apt:vlc-plugin-base', 'apt:vlc-plugin-video-output', 'apt:xclip', 'apt:xsane', 'apt:zoom', 'apt:zulip']
 
 [com/linuxmint/mintmenu/plugins/applications]
 favorite-apps-list=['location:/usr/share/applications/firefox.desktop\n', 'location:/usr/share/applications/thunderbird.desktop\n', 'location:/usr/share/applications/pix.desktop\n', 'location:/usr/share/applications/rhythmbox.desktop\n', 'separator\n', 'location:/usr/share/applications/gnome-calculator.desktop\n', 'location:/usr/share/applications/gcalctool.desktop\n', 'location:/usr/share/applications/org.gnome.Calculator.desktop\n', 'location:/usr/share/applications/xed.desktop\n', 'location:/usr/share/applications/mate-terminal.desktop\n', 'location:/usr/share/applications/gnome-terminal.desktop\n', 'location:/usr/share/applications/mate-volume-control.desktop\n', 'location:/usr/share/applications/cinnamon-settings-sound.desktop\n', 'location:/usr/share/applications/xfce4-mixer.desktop\n', 'separator\n', 'location:/usr/share/applications/mate-display-properties.desktop\n', 'location:/usr/share/applications/cinnamon-display-panel.desktop\n', 'location:/usr/share/applications/xfce-display-settings.desktop\n', 'location:/usr/share/applications/mate-system-monitor.desktop\n', 'location:/usr/share/applications/gnome-system-monitor.desktop\n', 'location:/usr/share/applications/xfce4-taskmanager.desktop\n']
@@ -14,8 +14,8 @@ auto-update-cinnamon-spices=true
 auto-update-flatpaks=true
 autorefresh-hours=2
 default-repo-is-ok=true
-install-last-run=1673900388
-refresh-last-run=1673918717
+install-last-run=1676313473
+refresh-last-run=1676448043
 refresh-minutes=10
 show-welcome-page=false
 tracker-grace-period=30
@@ -230,6 +230,14 @@ window-size=(1459, 826)
 [org/gnome/charmap/window-state]
 size=(900, 491)
 
+[org/gnome/cheese]
+burst-delay=1000
+camera='BisonCam,NB Pro: BisonCam,NB Pr'
+photo-x-resolution=1024
+photo-y-resolution=768
+video-x-resolution=1024
+video-y-resolution=768
+
 [org/gnome/desktop/a11y/applications]
 screen-keyboard-enabled=false
 screen-reader-enabled=false
@@ -360,7 +368,7 @@ include-pointer=false
 last-save-directory='file:///home/mango/Desktop'
 
 [org/gnome/gnome-system-monitor]
-current-tab='processes'
+current-tab='resources'
 maximized=false
 show-dependencies=false
 show-whose-processes='user'
@@ -382,6 +390,10 @@ options=['grp\tgrp:win_space_toggle', 'terminate\tterminate:ctrl_alt_bksp', 'cap
 disable-connected-notifications=true
 
 [org/gnome/nm-applet/eap/01b663ea-2424-4935-9cd7-278a492f6ed3]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/07f995a3-cd0d-4f26-a915-20dda9df6e15]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -430,6 +442,10 @@ ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/6e9cb480-a9d2-4529-91e6-c46a2f9bafdb]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/7350c61a-43ed-45df-81c3-36e91b6099f0]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -523,7 +539,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(393, 20)
+window-position=(219, 20)
 window-size=(1078, 822)
 
 [org/mate/panel/general]
@@ -639,7 +655,7 @@ show-location-entry=true
 show-only-directories=false
 
 [org/nemo/window-state]
-geometry='1234x842+182+0'
+geometry='1251x842+-380+89'
 maximized=false
 my-computer-expanded=true
 network-expanded=true
@@ -656,7 +672,7 @@ active-plugins=['bracketcompletion', 'docinfo', 'open-uri-context-menu', 'joinli
 [org/x/editor/plugins/filebrowser/on-load]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/mango/Downloads'
+virtual-root='file:///home/mango/Projects/config'
 
 [org/x/editor/preferences/ui]
 statusbar-visible=true
@@ -705,7 +721,7 @@ show-menubar=false
 show-toolbar=false
 
 [org/x/reader/default]
-window-ratio=(2.464864864864865, 1.0)
+window-ratio=(2.4640522875816995, 1.0)
 
 [org/x/viewer/ui]
 image-gallery=false
@@ -718,3 +734,9 @@ use-background-color=true
 
 [org/x/viewer/window]
 maximized=false
+
+[org/x/warpinator/preferences]
+ask-for-send-permission=true
+autostart=false
+no-overwrite=true
+receiving-folder='file:///home/mango/Warpinator'

@@ -1,8 +1,10 @@
+
 require "paq" {
     "savq/paq-nvim",
     "navarasu/onedark.nvim",
     {"nvim-treesitter/nvim-treesitter", run=":TSUpdate"},
     "JuliaEditorSupport/julia-vim",
+    "ellisonleao/glow.nvim",
 }
 
 -- Theme
@@ -106,7 +108,7 @@ augroup END
 ]]
 
 -- autoread
-opt.updatetime = 100
+--opt.updatetime = 100
 cmd[[au CursorHold * checktime | call feedkeys("lh")]]
 
 -- copy/paste global
