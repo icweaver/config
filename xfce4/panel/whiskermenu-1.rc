@@ -1,25 +1,27 @@
 favorites=firefox.desktop,thunderbird.desktop,pix.desktop,rhythmbox.desktop,org.gnome.Calculator.desktop,xed.desktop,mintinstall.desktop,xfce4-taskmanager.desktop
-recent=thunderbird.desktop,slack.desktop,zulip.desktop,com.cisco.anyconnect.gui.desktop,pavucontrol.desktop,Zoom.desktop,signal-desktop.desktop,xfce-display-settings.desktop,gmail-desktop.desktop,mintupdate.desktop
+recent=panel-preferences.desktop,xfce-keyboard-settings.desktop,xfce-wmtweaks-settings.desktop,xfce-wm-settings.desktop,firefox.desktop,xfce-ui-settings.desktop,org.gnome.font-viewer.desktop,xfce-mouse-settings.desktop,xfce-display-settings.desktop
 button-icon=linuxmint-logo-ring-symbolic
 button-single-row=false
 show-button-title=false
 show-button-icon=true
 launcher-show-name=true
-launcher-show-description=true
-launcher-show-tooltip=true
-item-icon-size=2
+launcher-show-description=false
+launcher-show-tooltip=false
+launcher-icon-size=2
 hover-switch-category=true
-category-show-name=false
+category-show-name=true
 category-icon-size=1
-load-hierarchy=false
-view-as-icons=false
+sort-categories=true
+view-mode=1
 default-category=0
 recent-items-max=10
 favorites-in-recent=true
-position-search-alternate=true
+position-search-alternate=false
 position-commands-alternate=false
 position-categories-alternate=true
+position-categories-horizontal=true
 stay-on-focus-out=false
+profile-shape=2
 confirm-session-command=true
 menu-width=450
 menu-height=500
@@ -46,7 +48,7 @@ command-menueditor=menulibre
 show-command-menueditor=true
 command-profile=mugshot
 show-command-profile=true
-search-actions=5
+search-actions=6
 
 [action0]
 name=Man Pages
@@ -55,24 +57,30 @@ command=exo-open --launch TerminalEmulator man %s
 regex=false
 
 [action1]
-name=Web Search
+name=Search the Web
 pattern=?
 command=exo-open --launch WebBrowser https://duckduckgo.com/?q=%u
 regex=false
 
 [action2]
+name=Search for Files
+pattern=-
+command=catfish --path=~ --start %s
+regex=false
+
+[action3]
 name=Wikipedia
 pattern=!w
 command=exo-open --launch WebBrowser https://en.wikipedia.org/wiki/%u
 regex=false
 
-[action3]
+[action4]
 name=Run in Terminal
 pattern=!
 command=exo-open --launch TerminalEmulator %s
 regex=false
 
-[action4]
+[action5]
 name=Open URI
 pattern=^(file|http|https):\\/\\/(.*)$
 command=exo-open \\0

@@ -6,7 +6,7 @@
     <property name="borderless_maximize" type="empty"/>
     <property name="box_move" type="empty"/>
     <property name="box_resize" type="empty"/>
-    <property name="button_layout" type="empty"/>
+    <property name="button_layout" type="string" value="|HMC"/>
     <property name="button_offset" type="empty"/>
     <property name="button_spacing" type="empty"/>
     <property name="click_to_focus" type="empty"/>
@@ -18,19 +18,19 @@
     <property name="cycle_workspaces" type="empty"/>
     <property name="double_click_time" type="empty"/>
     <property name="double_click_distance" type="empty"/>
-    <property name="double_click_action" type="empty"/>
+    <property name="double_click_action" type="string" value="maximize"/>
     <property name="easy_click" type="empty"/>
     <property name="focus_hint" type="empty"/>
     <property name="focus_new" type="empty"/>
-    <property name="frame_opacity" type="empty"/>
+    <property name="frame_opacity" type="int" value="100"/>
     <property name="full_width_title" type="empty"/>
-    <property name="inactive_opacity" type="empty"/>
+    <property name="inactive_opacity" type="int" value="100"/>
     <property name="maximized_offset" type="empty"/>
     <property name="move_opacity" type="empty"/>
     <property name="placement_ratio" type="empty"/>
     <property name="placement_mode" type="empty"/>
     <property name="popup_opacity" type="empty"/>
-    <property name="mousewheel_rollup" type="empty"/>
+    <property name="mousewheel_rollup" type="bool" value="false"/>
     <property name="prevent_focus_stealing" type="empty"/>
     <property name="raise_delay" type="empty"/>
     <property name="raise_on_click" type="empty"/>
@@ -46,9 +46,9 @@
     <property name="shadow_delta_y" type="empty"/>
     <property name="shadow_opacity" type="empty"/>
     <property name="show_app_icon" type="empty"/>
-    <property name="show_dock_shadow" type="empty"/>
-    <property name="show_frame_shadow" type="empty"/>
-    <property name="show_popup_shadow" type="empty"/>
+    <property name="show_dock_shadow" type="bool" value="false"/>
+    <property name="show_frame_shadow" type="bool" value="false"/>
+    <property name="show_popup_shadow" type="bool" value="false"/>
     <property name="snap_resist" type="empty"/>
     <property name="snap_to_border" type="empty"/>
     <property name="snap_to_windows" type="empty"/>
@@ -56,7 +56,7 @@
     <property name="theme" type="string" value="Mint-Y-Dark-Orange"/>
     <property name="tile_on_move" type="empty"/>
     <property name="title_alignment" type="empty"/>
-    <property name="title_font" type="empty"/>
+    <property name="title_font" type="string" value="Ubuntu Medium 10"/>
     <property name="title_horizontal_offset" type="empty"/>
     <property name="title_shadow_active" type="empty"/>
     <property name="title_shadow_inactive" type="empty"/>
@@ -65,7 +65,7 @@
     <property name="toggle_workspaces" type="empty"/>
     <property name="unredirect_overlays" type="empty"/>
     <property name="urgent_blink" type="empty"/>
-    <property name="use_compositing" type="empty"/>
+    <property name="use_compositing" type="bool" value="true"/>
     <property name="workspace_count" type="empty"/>
     <property name="workspace_names" type="empty"/>
     <property name="wrap_cycle" type="empty"/>
