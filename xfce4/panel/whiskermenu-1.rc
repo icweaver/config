@@ -1,5 +1,5 @@
 favorites=firefox.desktop,thunderbird.desktop,pix.desktop,rhythmbox.desktop,org.gnome.Calculator.desktop,xed.desktop,mintinstall.desktop,xfce4-taskmanager.desktop
-recent=panel-preferences.desktop,xfce-keyboard-settings.desktop,xfce-wmtweaks-settings.desktop,xfce-wm-settings.desktop,firefox.desktop,xfce-ui-settings.desktop,org.gnome.font-viewer.desktop,xfce-mouse-settings.desktop,xfce-display-settings.desktop
+recent=lightdm-settings.desktop,xfce4-session-logout.desktop,xfce-mouse-settings.desktop,xfce-ui-settings.desktop,xfce-settings-manager.desktop,xfce4-settings-editor.desktop,org.gnome.FontManager.desktop,panel-preferences.desktop,xfce-keyboard-settings.desktop,xfce-wmtweaks-settings.desktop
 button-icon=linuxmint-logo-ring-symbolic
 button-single-row=false
 show-button-title=false
