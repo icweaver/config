@@ -35,4 +35,6 @@ ScrollingUnlimited=TRUE
 FontUseSystem=TRUE
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 TextBlinkMode=TERMINAL_TEXT_BLINK_MODE_NEVER
+ColorForeground=#e221f806ffff
+ColorBoldIsBright=FALSE
 
