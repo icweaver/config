@@ -25,6 +25,7 @@
         <value type="int" value="13"/>
       </property>
       <property name="icon-size" type="uint" value="16"/>
+      <property name="output-name" type="string" value="Primary"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -53,6 +54,9 @@
       <property name="known-items" type="array">
         <value type="string" value="blueman"/>
       </property>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="thunar"/>
+      </property>
     </property>
     <property name="plugin-9" type="empty"/>
     <property name="plugin-10" type="empty"/>
@@ -62,7 +66,7 @@
       <property name="enable-mpris" type="empty"/>
       <property name="mixer-command" type="empty"/>
       <property name="show-notifications" type="empty"/>
-      <property name="mpris-players" type="string" value="firefox.instance25706"/>
+      <property name="mpris-players" type="string" value="firefox.instance100263;firefox.instance115926;firefox.instance14634;firefox.instance168384;firefox.instance1918;firefox.instance24685;firefox.instance25706;firefox.instance2861;firefox.instance3805;firefox.instance4391;firefox.instance4525;firefox.instance5637;firefox.instance59432;firefox.instance6264;firefox.instance8356;firefox.instance96516"/>
     </property>
     <property name="plugin-13" type="empty">
       <property name="digital-format" type="string" value="&lt;b&gt;%a %_d %b, %T&lt;/b&gt;"/>
