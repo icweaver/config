@@ -4,7 +4,7 @@ alias rse2="rsync -trluhvv --delete --stats --inplace iweaver@emu.astro.puc.cl:/
 alias ..="cd .."
 alias acc="cd ~/cfa/mercedes/ACCESS"
 alias anc="open -a /Applications/Cisco/Cisco\ AnyConnect\ Secure\ Mobility\ Client.app"
-alias bkmanjaro="cp -r ~/.config/xfce4 ~/config/"
+alias bkx="cp -r ~/.config/xfce4 ~/Projects/config/"
 alias bkmint="dconf dump / > ~/Projects/config/mint_backup"
 alias cf="ssh -tX iweaver@mars.cfa.harvard.edu bash"
 alias emu="ssh iweaver@emu.astro.puc.cl"
@@ -25,7 +25,7 @@ alias jtr="jt -r"
 alias jtr="jt -r"
 alias l="ls -CF"
 alias la="ls -A"
-alias ldmanjaro="cp -r ~/Projects/config/xfce4 ~/.config/"
+alias ldx="cp -r ~/Projects/config/xfce4 ~/.config/"
 alias ldmint="dconf load / < ~/Projects/config/mint_backup"
 alias ll="ls -alF"
 alias ls="ls --color=auto"
@@ -101,11 +101,18 @@ unset __mamba_setup
 
 
 # >>> juliaup initialize >>>
+
 # !! Contents within this block are managed by juliaup !!
 
-case ":$PATH:" in *:/home/mango/.juliaup/bin:*);; *)
-    export PATH=/home/mango/.juliaup/bin${PATH:+:${PATH}};;
+case ":$PATH:" in
+    *:/home/mango/.juliaup/bin:*)
+        ;;
+
+    *)
+        export PATH=/home/mango/.juliaup/bin${PATH:+:${PATH}}
+        ;;
 esac
+
 # <<< juliaup initialize <<<
 
 # Prompt
