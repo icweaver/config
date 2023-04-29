@@ -33,8 +33,8 @@
         <property name="Y" type="double" value="1.000000"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="2560"/>
-        <property name="Y" type="int" value="760"/>
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
       </property>
     </property>
     <property name="HDMI-A-0" type="string" value="Ancor Communications Inc 27&quot;">
@@ -54,9 +54,26 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
-    <property name="DisplayPort-0" type="string" value="Dell Inc. 27&quot;">
+    <property name="DisplayPort-0" type="string" value="Samsung Electric Company 32&quot;">
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="97870fb8dd1e71fc236c343356c394bc76554c55"/>
+      <property name="EDID" type="string" value="f8c4dd2e8aba8db7145903e407356205479d0891"/>
+      <property name="Resolution" type="string" value="2560x1440"/>
+      <property name="RefreshRate" type="double" value="59.950550"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1.000000"/>
+        <property name="Y" type="double" value="1.000000"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1680"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DisplayPort-1" type="string" value="Samsung Electric Company 32&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="f8c4dd2e8aba8db7145903e407356205479d0891"/>
       <property name="Resolution" type="string" value="2560x1440"/>
       <property name="RefreshRate" type="double" value="59.950550"/>
       <property name="Rotation" type="int" value="0"/>
@@ -103,8 +120,8 @@
         <property name="Y" type="double" value="1.000000"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="2560"/>
-        <property name="Y" type="int" value="760"/>
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
       </property>
     </property>
     <property name="HDMI-A-0" type="string" value="Ancor Communications Inc 27&quot;">
@@ -124,9 +141,26 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
-    <property name="DisplayPort-0" type="string" value="Dell Inc. 27&quot;">
+    <property name="DisplayPort-0" type="string" value="Samsung Electric Company 32&quot;">
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="97870fb8dd1e71fc236c343356c394bc76554c55"/>
+      <property name="EDID" type="string" value="f8c4dd2e8aba8db7145903e407356205479d0891"/>
+      <property name="Resolution" type="string" value="2560x1440"/>
+      <property name="RefreshRate" type="double" value="59.950550"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1.000000"/>
+        <property name="Y" type="double" value="1.000000"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1680"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DisplayPort-1" type="string" value="Samsung Electric Company 32&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="f8c4dd2e8aba8db7145903e407356205479d0891"/>
       <property name="Resolution" type="string" value="2560x1440"/>
       <property name="RefreshRate" type="double" value="59.950550"/>
       <property name="Rotation" type="int" value="0"/>

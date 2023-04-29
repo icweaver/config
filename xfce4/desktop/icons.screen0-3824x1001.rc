@@ -2,11 +2,11 @@
 4.10.3+=true
 
 [/home/mango/Desktop/p12.png]
-row=10
+row=1
 col=0
 
 [/home/mango/Desktop/p15.png]
-row=11
+row=2
 col=0
 
 [/home/mango/Desktop/p10.png]
@@ -14,6 +14,6 @@ row=8
 col=0
 
 [/home/mango/Desktop/p11.png]
-row=9
+row=0
 col=0
 

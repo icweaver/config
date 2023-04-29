@@ -52,9 +52,12 @@
       <property name="names-visible" type="empty"/>
       <property name="show-frame" type="empty"/>
       <property name="known-items" type="array">
+        <value type="string" value="chrome_status_icon_1"/>
+        <value type="string" value="Slack1"/>
         <value type="string" value="blueman"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="system-config-printer"/>
         <value type="string" value="thunar"/>
       </property>
     </property>
@@ -66,7 +69,7 @@
       <property name="enable-mpris" type="empty"/>
       <property name="mixer-command" type="empty"/>
       <property name="show-notifications" type="empty"/>
-      <property name="mpris-players" type="string" value="firefox.instance100263;firefox.instance115926;firefox.instance14634;firefox.instance168384;firefox.instance1918;firefox.instance24685;firefox.instance25706;firefox.instance2861;firefox.instance3805;firefox.instance4391;firefox.instance4525;firefox.instance5637;firefox.instance59432;firefox.instance6264;firefox.instance8356;firefox.instance96516"/>
+      <property name="mpris-players" type="string" value="firefox.instance100263;firefox.instance108168;firefox.instance114929;firefox.instance115926;firefox.instance121168;firefox.instance126028;firefox.instance130993;firefox.instance132800;firefox.instance14634;firefox.instance168384;firefox.instance177725;firefox.instance1918;firefox.instance1936;firefox.instance1953;firefox.instance1960;firefox.instance202253;firefox.instance21176;firefox.instance224345;firefox.instance228018;firefox.instance24685;firefox.instance253461;firefox.instance25706;firefox.instance265896;firefox.instance277488;firefox.instance2861;firefox.instance288290;firefox.instance28962;firefox.instance293999;firefox.instance2947;firefox.instance302326;firefox.instance3805;firefox.instance4391;firefox.instance4525;firefox.instance46266;firefox.instance5637;firefox.instance58026;firefox.instance59432;firefox.instance60335;firefox.instance6264;firefox.instance7494;firefox.instance77959;firefox.instance81420;firefox.instance8356;firefox.instance85817;firefox.instance96516;io.github.celluloid_player.Celluloid.instance-1;rhythmbox;spotify"/>
     </property>
     <property name="plugin-13" type="empty">
       <property name="digital-format" type="string" value="&lt;b&gt;%a %_d %b, %T&lt;/b&gt;"/>
