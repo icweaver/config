@@ -9,5 +9,6 @@
     </property>
     <property name="XkbLayout" type="string" value="us"/>
     <property name="XkbVariant" type="string" value=""/>
+    <property name="XkbModel" type="string" value="pc105"/>
   </property>
 </channel>
