@@ -12,10 +12,10 @@
     <property name="click_to_focus" type="empty"/>
     <property name="focus_delay" type="empty"/>
     <property name="cycle_apps_only" type="empty"/>
-    <property name="cycle_draw_frame" type="bool" value="false"/>
+    <property name="cycle_draw_frame" type="bool" value="true"/>
     <property name="cycle_hidden" type="empty"/>
     <property name="cycle_minimum" type="empty"/>
-    <property name="cycle_workspaces" type="empty"/>
+    <property name="cycle_workspaces" type="bool" value="true"/>
     <property name="double_click_time" type="empty"/>
     <property name="double_click_distance" type="empty"/>
     <property name="double_click_action" type="string" value="maximize"/>
@@ -28,7 +28,7 @@
     <property name="maximized_offset" type="empty"/>
     <property name="move_opacity" type="empty"/>
     <property name="placement_ratio" type="empty"/>
-    <property name="placement_mode" type="empty"/>
+    <property name="placement_mode" type="string" value="mouse"/>
     <property name="popup_opacity" type="empty"/>
     <property name="mousewheel_rollup" type="bool" value="false"/>
     <property name="prevent_focus_stealing" type="empty"/>
@@ -63,7 +63,7 @@
     <property name="title_vertical_offset_active" type="empty"/>
     <property name="title_vertical_offset_inactive" type="empty"/>
     <property name="toggle_workspaces" type="empty"/>
-    <property name="unredirect_overlays" type="empty"/>
+    <property name="unredirect_overlays" type="bool" value="true"/>
     <property name="urgent_blink" type="empty"/>
     <property name="use_compositing" type="bool" value="true"/>
     <property name="workspace_count" type="int" value="2"/>
@@ -80,7 +80,7 @@
     <property name="cycle_raise" type="bool" value="false"/>
     <property name="cycle_minimized" type="bool" value="false"/>
     <property name="cycle_preview" type="bool" value="true"/>
-    <property name="cycle_tabwin_mode" type="int" value="0"/>
+    <property name="cycle_tabwin_mode" type="int" value="1"/>
     <property name="frame_border_top" type="int" value="0"/>
     <property name="horiz_scroll_opacity" type="bool" value="false"/>
     <property name="vblank_mode" type="string" value="auto"/>

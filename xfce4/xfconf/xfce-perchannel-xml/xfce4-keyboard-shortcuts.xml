@@ -60,9 +60,6 @@
       <property name="&lt;Super&gt;b" type="string" value="exo-open --launch WebBrowser"/>
       <property name="&lt;Super&gt;space" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="&lt;Super&gt;t" type="string" value="x-terminal-emulator"/>
-      <property name="&lt;Primary&gt;Home" type="string" value="dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"/>
-      <property name="&lt;Primary&gt;Insert" type="string" value="dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"/>
-      <property name="&lt;Primary&gt;End" type="string" value="dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -179,7 +176,6 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;d" type="string" value="show_desktop_key"/>
       <property name="&lt;Primary&gt;F10" type="string" value="workspace_10_key"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;KP_3" type="string" value="move_window_workspace_3_key"/>
-      <property name="&lt;Alt&gt;F9" type="string" value="hide_window_key"/>
       <property name="Up" type="string" value="up_key"/>
       <property name="&lt;Primary&gt;F2" type="string" value="workspace_2_key"/>
       <property name="&lt;Control&gt;F6" type="string" value="workspace_6_key"/>
@@ -253,6 +249,7 @@
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Right" type="string" value="move_window_next_workspace_key"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Left" type="string" value="move_window_left_workspace_key"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Right" type="string" value="move_window_right_workspace_key"/>
+      <property name="&lt;Super&gt;m" type="string" value="hide_window_key"/>
     </property>
   </property>
   <property name="providers" type="empty"/>
