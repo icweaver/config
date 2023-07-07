@@ -8,8 +8,14 @@ require "paq" {
 
 -- Theme
 require("onedark").setup {
-    style = "dark",
+    style = "deep",
+    code_style = {
+        comments = "bold,italic",
+    },
     transparent = true,
+    colors = {
+        grey = "#48b0bd",
+    },
 }
 require("onedark").load()
 
@@ -23,15 +29,19 @@ local api = vim.api
 opt.mouse = 'a'
 opt.splitright = true
 opt.splitbelow = true
-opt.relativenumber = true
+opt.number = true
+opt.relativenumber = false
 opt.cursorline = true
 opt.tw = 120
 opt.cc = "+1"
-opt.wrap = false
+opt.wrap = true
 opt.syntax = "off"
 opt.list = true
 opt.expandtab = true
 opt.autoindent = true
+opt.shiftwidth = 4
+opt.tabstop = 4
+opt.softtabstop = 4
 
 -- Commands
 -- Remeber last place
@@ -44,6 +54,7 @@ cmd[[autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4]]
 cmd[[autocmd FileType tex setlocal shiftwidth=4 tabstop=4 softtabstop=4]]
 cmd[[autocmd FileType markdown setlocal shiftwidth=4 tabstop=4 softtabstop=4]]
 cmd[[autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 softtabstop=2]]
+cmd[[hi MatchParen guibg=none guifg=orange gui=underline]]
 
 -- Mappings
 function map(mode, shortcut, command)
@@ -65,7 +76,7 @@ require'nvim-treesitter.configs'.setup {
   sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
   ignore_install = { }, -- List of parsers to ignore installing
   highlight = {
-    enable = { "julia" },              -- false will disable the whole extension
+    enable = { "julia", "rust" },              -- false will disable the whole extension
     disable = { },  -- list of language that will be disabled
     -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
     -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
