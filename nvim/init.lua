@@ -7,14 +7,17 @@ require "paq" {
 }
 
 -- Theme
+local theme_style = "deep"
+local palette = require("onedark.palette")[theme_style]
 require("onedark").setup {
-    style = "deep",
+    style = theme_style,
     code_style = {
         comments = "bold,italic",
     },
     transparent = true,
-    colors = {
-        grey = "#48b0bd",
+    highlights = {
+        ["@comment"] = {fg = palette.fg},
+        ["@function.macro"] = {fg = palette.red},
     },
 }
 require("onedark").load()
@@ -76,7 +79,7 @@ require'nvim-treesitter.configs'.setup {
   sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
   ignore_install = { }, -- List of parsers to ignore installing
   highlight = {
-    enable = { "julia", "rust" },              -- false will disable the whole extension
+    enable = { },              -- false will disable the whole extension
     disable = { },  -- list of language that will be disabled
     -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
     -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
