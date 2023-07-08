@@ -12,7 +12,7 @@ local palette = require("onedark.palette")[theme_style]
 require("onedark").setup {
     style = theme_style,
     code_style = {
-        comments = "bold,italic",
+        comments = "italic",
     },
     transparent = true,
     highlights = {
