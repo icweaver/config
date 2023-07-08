@@ -7,6 +7,7 @@ alias anc="open -a /Applications/Cisco/Cisco\ AnyConnect\ Secure\ Mobility\ Clie
 alias bkx="cp -r ~/.config/xfce4 ~/Projects/config/"
 alias bkmint="dconf dump / > ~/Projects/config/mint_backup"
 alias cf="ssh -tX iweaver@mars.cfa.harvard.edu bash"
+alias cr="cargo run"
 alias emu="ssh iweaver@emu.astro.puc.cl"
 alias ga="git add"
 alias gc="git commit -m"
@@ -40,10 +41,10 @@ alias pa="micromamba activate gen"
 alias pd="micromamba deactivate"
 alias pl='julia --project=@. -e "using Pluto;
     notebook = length(ARGS) == 1 ? ARGS[1] : nothing;
-    Pluto.run(notebook=notebook; auto_reload_from_file=true)"'
+    Pluto.run(; notebook=notebook, auto_reload_from_file=true)"'
 alias plm='julia --project=$HOME/Projects/pluto -e "using Pluto;
     notebook = length(ARGS) == 1 ? ARGS[1] : nothing;
-    Pluto.run(notebook=notebook)"'
+    Pluto.run(; notebook=notebook)"'
 alias pr="cd ~/Projects"
 alias r="ranger"
 alias rcl="rclone mount --daemon"
@@ -57,6 +58,7 @@ alias rtr="rclone delete trash: --drive-trashed-only --drive-use-trash=false --v
 
 # Neovim v0.7 (manjaro)
 export PATH="$HOME/.local/bin/nvim-linux64/bin:$PATH"
+export VISUAL=$(which nvim)
 export EDITOR=$(which nvim)
 
 # Useful functions
@@ -84,9 +86,9 @@ mre ()
 
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
-export MAMBA_EXE="/usr/local/bin/micromamba";
+export MAMBA_EXE="/home/mango/.local/bin/micromamba";
 export MAMBA_ROOT_PREFIX="/home/mango/micromamba";
-__mamba_setup="$('/usr/local/bin/micromamba' shell hook --shell bash --prefix '/home/mango/micromamba' 2> /dev/null)"
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__mamba_setup"
 else
@@ -121,4 +123,6 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 export PS1="\n\[\e[0;1;38;5;208m\]\u\[\e[0m\]: \[\e[0;1;38;5;40m\]\w\[\e[0m\]\[\e[0;1;38;5;220m\]\$(parse_git_branch)\[\e[0m\]\n> "
-PS1=$PS1'\[\e]2;\W\a\]' # set terminal title to cwd
+
+# Terminal title
+PS1=$PS1'\[\e]0;\w\a\]'
