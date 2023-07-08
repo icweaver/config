@@ -45,6 +45,8 @@ opt.autoindent = true
 opt.shiftwidth = 4
 opt.tabstop = 4
 opt.softtabstop = 4
+opt.title = true
+opt.titlestring = [[%f %h%m%r%w]]
 
 -- Commands
 -- Remeber last place
