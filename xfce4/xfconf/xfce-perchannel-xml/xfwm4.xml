@@ -18,7 +18,7 @@
     <property name="cycle_workspaces" type="bool" value="true"/>
     <property name="double_click_time" type="empty"/>
     <property name="double_click_distance" type="empty"/>
-    <property name="double_click_action" type="string" value="maximize"/>
+    <property name="double_click_action" type="string" value="none"/>
     <property name="easy_click" type="empty"/>
     <property name="focus_hint" type="empty"/>
     <property name="focus_new" type="empty"/>
@@ -54,7 +54,7 @@
     <property name="snap_to_windows" type="empty"/>
     <property name="snap_width" type="empty"/>
     <property name="theme" type="string" value="Mint-Y-Dark-Orange"/>
-    <property name="tile_on_move" type="empty"/>
+    <property name="tile_on_move" type="bool" value="false"/>
     <property name="title_alignment" type="empty"/>
     <property name="title_font" type="string" value="Ubuntu Medium 10"/>
     <property name="title_horizontal_offset" type="empty"/>
@@ -66,7 +66,7 @@
     <property name="unredirect_overlays" type="bool" value="true"/>
     <property name="urgent_blink" type="empty"/>
     <property name="use_compositing" type="bool" value="true"/>
-    <property name="workspace_count" type="int" value="1"/>
+    <property name="workspace_count" type="int" value="2"/>
     <property name="workspace_names" type="empty"/>
     <property name="wrap_cycle" type="empty"/>
     <property name="wrap_layout" type="empty"/>
