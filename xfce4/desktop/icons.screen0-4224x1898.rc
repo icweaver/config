@@ -2,20 +2,20 @@
 4.10.3+=true
 
 [/home/mango/Desktop/Shotcut_00_01_56_350.png]
-row=2
-col=1
+row=10
+col=0
 
 [/home/mango/Desktop/eclipse_500x.mp4]
-row=1
-col=1
+row=11
+col=0
 
 [/home/mango/Desktop/eclipse_50x.mp4]
 row=4
 col=0
 
 [/home/mango/Desktop/Shotcut_00_01_30_483.png]
-row=3
-col=1
+row=9
+col=0
 
 [/home/mango/Desktop/Shotcut_00_01_57_417.png]
 row=5
@@ -23,6 +23,10 @@ col=0
 
 [/home/mango/Desktop/Shotcut_00_00_17_750.png]
 row=7
+col=0
+
+[/home/mango/Desktop/Photos-001.zip]
+row=12
 col=0
 
 [/home/mango/Desktop/Camera]
