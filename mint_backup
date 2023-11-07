@@ -1,6 +1,6 @@
 [com/linuxmint/install]
 flatpak-remotes=['flathub::https://dl.flathub.org/repo/::False']
-installed-apps=['apt:chromium', 'apt:docker.io', 'apt:firefox-geckodriver', 'apt:firmware-manager', 'apt:firmware-manager-notify', 'apt:firmware-manager-shared', 'apt:font-manager', 'apt:git', 'apt:git-man', 'apt:gnome-shell-extension-system76-power', 'apt:hidpi-daemon', 'apt:ipp-usb', 'apt:kaccounts-providers', 'apt:kactivities-bin', 'apt:kactivitymanagerd', 'apt:kde-cli-tools', 'apt:kdeconnect', 'apt:keditbookmarks', 'apt:kinit', 'apt:kio', 'apt:kpackagelauncherqml', 'apt:kpackagetool5', 'apt:kpeople-vcard', 'apt:kwayland-integration', 'apt:linux-headers-5.17.5-76051705', 'apt:linux-headers-5.18.10-76051810', 'apt:linux-modules-5.17.5-76051705-generic', 'apt:linux-modules-5.18.10-76051810-generic', 'apt:linux-system76', 'apt:neovim', 'apt:okular', 'apt:okular-extra-backends', 'apt:peek', 'apt:phonon4qt5', 'apt:phonon4qt5-backend-vlc', 'apt:plasma-framework', 'apt:qml-module-org-kde-bluezqt', 'apt:qml-module-org-kde-kconfig', 'apt:qml-module-org-kde-kirigami2', 'apt:qml-module-org-kde-kquickcontrols', 'apt:qml-module-org-kde-kquickcontrolsaddons', 'apt:qml-module-org-kde-people', 'apt:qml-module-org-kde-purpose', 'apt:qml-module-qtgraphicaleffects', 'apt:qml-module-qtqml-models2', 'apt:qml-module-qtquick-controls', 'apt:qml-module-qtquick-controls2', 'apt:qml-module-qtquick-dialogs', 'apt:qml-module-qtquick-layouts', 'apt:qml-module-qtquick-privatewidgets', 'apt:qml-module-qtquick-templates2', 'apt:qml-module-qtquick-window2', 'apt:qml-module-qtquick2', 'apt:qml-module-ubuntu-onlineaccounts', 'apt:qtspeech5-flite-plugin', 'apt:qtwayland5', 'apt:rclone', 'apt:sane', 'apt:sane-airscan', 'apt:signon-plugin-oauth2', 'apt:simplescreenrecorder', 'apt:slack-desktop', 'apt:snmp', 'apt:sonnet-plugins', 'apt:sshfs', 'apt:system76-acpi-dkms', 'apt:system76-driver', 'apt:system76-firmware-daemon', 'apt:system76-oled', 'apt:system76-power', 'apt:vlc-plugin-base', 'apt:vlc-plugin-video-output', 'apt:xclip', 'apt:xsane', 'apt:zoom', 'apt:zulip']
+installed-apps=['apt:font-manager', 'apt:git', 'apt:neovim']
 
 [com/linuxmint/mintmenu/plugins/applications]
 favorite-apps-list=['location:/usr/share/applications/firefox.desktop\n', 'location:/usr/share/applications/thunderbird.desktop\n', 'location:/usr/share/applications/pix.desktop\n', 'location:/usr/share/applications/rhythmbox.desktop\n', 'separator\n', 'location:/usr/share/applications/gnome-calculator.desktop\n', 'location:/usr/share/applications/gcalctool.desktop\n', 'location:/usr/share/applications/org.gnome.Calculator.desktop\n', 'location:/usr/share/applications/xed.desktop\n', 'location:/usr/share/applications/mate-terminal.desktop\n', 'location:/usr/share/applications/gnome-terminal.desktop\n', 'location:/usr/share/applications/mate-volume-control.desktop\n', 'location:/usr/share/applications/cinnamon-settings-sound.desktop\n', 'location:/usr/share/applications/xfce4-mixer.desktop\n', 'separator\n', 'location:/usr/share/applications/mate-display-properties.desktop\n', 'location:/usr/share/applications/cinnamon-display-panel.desktop\n', 'location:/usr/share/applications/xfce-display-settings.desktop\n', 'location:/usr/share/applications/mate-system-monitor.desktop\n', 'location:/usr/share/applications/gnome-system-monitor.desktop\n', 'location:/usr/share/applications/xfce4-taskmanager.desktop\n']
@@ -15,7 +15,7 @@ auto-update-flatpaks=true
 autorefresh-hours=2
 default-repo-is-ok=true
 install-last-run=1676313473
-refresh-last-run=1676448043
+refresh-last-run=1699310988
 refresh-minutes=10
 show-welcome-page=false
 tracker-grace-period=30
@@ -48,6 +48,12 @@ width=800
 [org/blueberry]
 obex-enabled=false
 tray-enabled=true
+
+[org/blueman/general]
+window-properties=[500, 350, 140, 204]
+
+[org/blueman/plugins/powermanager]
+auto-power-on=@mb true
 
 [org/cinnamon]
 alttab-switcher-delay=100
@@ -85,20 +91,20 @@ secondary-click-time=1.2
 
 [org/cinnamon/desktop/background]
 picture-options='zoom'
-picture-uri='file:///home/mango/Projects/config/desktop.JPG'
+picture-uri='file:///home/mango/projects/config/desktop.JPG'
 
 [org/cinnamon/desktop/background/slideshow]
 delay=15
-image-source='directory:///home/mango/Pictures'
+image-source='directory:///home/mango/projects/config'
 
 [org/cinnamon/desktop/interface]
 clock-show-seconds=true
 cursor-blink-time=1200
 cursor-size=24
-cursor-theme='Adwaita'
+cursor-theme='Bibata-Modern-Classic'
 font-name='Ubuntu 12'
 gtk-theme='Mint-Y-Dark-Orange'
-icon-theme='Mint-Y-Dark-Orange'
+icon-theme='Mint-Y-Orange'
 scaling-factor=uint32 0
 text-scaling-factor=1.0
 
@@ -126,10 +132,10 @@ push-snap-down=['<Super>Down']
 push-snap-left=['<Super>Left']
 push-snap-right=['<Super>Right']
 push-snap-up=['<Super>Up']
-push-tile-down=@as []
-push-tile-left=@as []
-push-tile-right=@as []
-push-tile-up=@as []
+push-tile-down=['<Super>Down']
+push-tile-left=['<Super>Left']
+push-tile-right=['<Super>Right']
+push-tile-up=['<Super>Up']
 
 [org/cinnamon/desktop/media-handling]
 autorun-x-content-ignore=@as []
@@ -138,6 +144,19 @@ autorun-x-content-start-app=['x-content/unix-software']
 
 [org/cinnamon/desktop/notifications]
 display-notifications=false
+
+[org/cinnamon/desktop/peripherals/keyboard]
+delay=uint32 190
+repeat-interval=uint32 19
+
+[org/cinnamon/desktop/peripherals/mouse]
+double-click=400
+drag-threshold=8
+
+[org/cinnamon/desktop/peripherals/touchpad]
+disable-while-typing=true
+send-events='enabled'
+tap-to-click=true
 
 [org/cinnamon/desktop/screensaver]
 lock-enabled=true
@@ -148,7 +167,7 @@ volume-sound-enabled=false
 
 [org/cinnamon/desktop/wm/preferences]
 min-window-opacity=30
-mouse-button-modifier=''
+mouse-button-modifier='<Super>'
 num-workspaces=2
 theme='Mint-Y'
 titlebar-font='Ubuntu 12'
@@ -159,36 +178,25 @@ check-frequency=300
 memory-limit=2048
 
 [org/cinnamon/muffin]
-edge-tiling=true
+draggable-border-width=10
+edge-tiling=false
 placement-mode='center'
 resize-threshold=24
 tile-hud-threshold=25
 
 [org/cinnamon/settings-daemon/peripherals/keyboard]
-delay=uint32 190
 numlock-state='off'
-repeat-interval=uint32 19
-
-[org/cinnamon/settings-daemon/peripherals/mouse]
-double-click=400
-drag-threshold=8
-motion-threshold=1
 
 [org/cinnamon/settings-daemon/peripherals/touchpad]
 custom-threshold=false
-disable-while-typing=true
-disable-with-external-mouse=false
 horizontal-scrolling=true
-motion-threshold=1
-tap-to-click=true
-touchpad-enabled=true
 
 [org/cinnamon/settings-daemon/plugins/power]
 lid-close-ac-action='suspend'
 lid-close-battery-action='suspend'
 sleep-display-ac=900
 sleep-display-battery=600
-sleep-inactive-ac-timeout=1800
+sleep-inactive-ac-timeout=7200
 sleep-inactive-battery-timeout=900
 
 [org/cinnamon/sounds]
@@ -349,6 +357,10 @@ browse-mode='Grid'
 compare-background-color='rgb(255,255,255)'
 compare-foreground-color='rgb(0,0,0)'
 compare-list=@as []
+google-fonts-background-color='rgb(255,255,255)'
+google-fonts-foreground-color='rgb(0,0,0)'
+is-maximized=false
+language-filter-list=@as []
 preview-page=0
 preview-text="\n    The quick brown fox jumps over the lazy dog.\n\n    ABCDEFGHIJKLMNOPQRSTUVWXYZ\n    abcdefghijklmnopqrstuvwxyz\n    1234567890.:,;(*!?')\n\n    "
 selected-category='0'
@@ -383,8 +395,12 @@ columns-order=[0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 2
 sort-col=15
 sort-order=0
 
+[org/gnome/libgnomekbd/desktop]
+group-per-window=false
+load-extra-items=false
+
 [org/gnome/libgnomekbd/keyboard]
-options=['grp\tgrp:win_space_toggle', 'terminate\tterminate:ctrl_alt_bksp', 'caps\tcaps:escape', 'Compose key\tcompose:rctrl']
+options=['terminate\tterminate:ctrl_alt_bksp', 'Compose key\tcompose:caps']
 
 [org/gnome/nm-applet]
 disable-connected-notifications=true
@@ -539,7 +555,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(219, 20)
+window-position=(409, 103)
 window-size=(1078, 822)
 
 [org/mate/panel/general]
@@ -656,7 +672,7 @@ show-only-directories=false
 
 [org/nemo/window-state]
 geometry='1251x842+-380+89'
-maximized=false
+maximized=true
 my-computer-expanded=true
 network-expanded=true
 side-pane-view='places'
@@ -665,6 +681,9 @@ sidebar-width=210
 start-with-menu-bar=false
 start-with-sidebar=true
 start-with-toolbar=false
+
+[org/x/apps/portal]
+color-scheme='prefer-dark'
 
 [org/x/editor/plugins]
 active-plugins=['bracketcompletion', 'docinfo', 'open-uri-context-menu', 'joinlines', 'spell', 'filebrowser', 'time', 'sort', 'textsize', 'modelines']
@@ -738,5 +757,6 @@ maximized=false
 [org/x/warpinator/preferences]
 ask-for-send-permission=true
 autostart=false
+connect-id='MANGO-596675ECD407DBB84110'
 no-overwrite=true
 receiving-folder='file:///home/mango/Warpinator'

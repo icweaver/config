@@ -1,3 +1,4 @@
 xinput set-prop "Apple Inc. Apple Internal Keyboard / Trackpad" "Device Enabled" 0
 xinput set-prop "bcm5974" "libinput Tapping Drag Lock Enabled" 1
 xinput set-prop "PNP0C50:00 2808:0101 Touchpad" "libinput Tapping Drag Lock Enabled" 1
+xinput set-prop "SYNA8018:00 06CB:CE67 Touchpad" "libinput Tapping Drag Lock Enabled" 1
