@@ -1,9 +1,9 @@
 app=drawing
 last_user=
 screenshot_dir=file:/home/mango/Desktop
-action=2
-delay=0
-region=3
+action=1
+delay=2
+region=2
 show_mouse=0
 last_extension=png
 enable_imgur_upload=true

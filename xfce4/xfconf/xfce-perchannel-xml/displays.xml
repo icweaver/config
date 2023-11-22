@@ -33,15 +33,15 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="734"/>
-        <property name="Y" type="int" value="1080"/>
+        <property name="X" type="int" value="2560"/>
+        <property name="Y" type="int" value="720"/>
       </property>
     </property>
-    <property name="HDMI-A-0" type="string" value="LG Electronics 22&quot;">
+    <property name="HDMI-A-0" type="string" value="Samsung Electric Company 32&quot;">
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="971838a96b6a02841fdef443951b09ad914b9ca6"/>
-      <property name="Resolution" type="string" value="1920x1080"/>
-      <property name="RefreshRate" type="double" value="60"/>
+      <property name="EDID" type="string" value="277a63d7b78662a70f73466c176f4805b7ac6707"/>
+      <property name="Resolution" type="string" value="2560x1440"/>
+      <property name="RefreshRate" type="double" value="59.950550105254798"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
@@ -154,15 +154,15 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="734"/>
-        <property name="Y" type="int" value="1080"/>
+        <property name="X" type="int" value="2560"/>
+        <property name="Y" type="int" value="720"/>
       </property>
     </property>
-    <property name="HDMI-A-0" type="string" value="LG Electronics 22&quot;">
+    <property name="HDMI-A-0" type="string" value="Samsung Electric Company 32&quot;">
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="971838a96b6a02841fdef443951b09ad914b9ca6"/>
-      <property name="Resolution" type="string" value="1920x1080"/>
-      <property name="RefreshRate" type="double" value="60"/>
+      <property name="EDID" type="string" value="277a63d7b78662a70f73466c176f4805b7ac6707"/>
+      <property name="Resolution" type="string" value="2560x1440"/>
+      <property name="RefreshRate" type="double" value="59.950550105254798"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
