@@ -4,8 +4,8 @@ alias rse2="rsync -trluhvv --delete --stats --inplace iweaver@emu.astro.puc.cl:/
 alias ..="cd .."
 alias acc="cd ~/cfa/mercedes/ACCESS"
 alias anc="open -a /Applications/Cisco/Cisco\ AnyConnect\ Secure\ Mobility\ Client.app"
-alias bkx="cp -r ~/.config/xfce4 ~/Projects/config/"
-alias bkmint="dconf dump / > ~/Projects/config/mint_backup"
+alias bkx="cp -r ~/.config/xfce4 ~/projects/config/"
+alias bkmint="dconf dump / > ~/projects/config/mint_backup"
 alias cf="ssh -tX iweaver@mars.cfa.harvard.edu bash"
 alias cr="cargo run"
 alias emu="ssh iweaver@emu.astro.puc.cl"
@@ -19,15 +19,15 @@ alias gr="git remote -v"
 alias gs="git status"
 alias gu="git commit -am 'up'; git push"
 alias hyd="ssh -t iweaver@hydra-login01.si.edu 'bash'"
-alias j="julia --project=@."
+alias j="julia"
 alias jpy="jupyter-notebook"
 alias jtd="jt -t oceans16 -fs 12 -ofs 12 -nfs 12 -cellw 100%"
 alias jtr="jt -r"
 alias jtr="jt -r"
 alias l="ls -CF"
 alias la="ls -A"
-alias ldx="cp -r ~/Projects/config/xfce4 ~/.config/"
-alias ldmint="dconf load / < ~/Projects/config/mint_backup"
+alias ldx="cp -r ~/projects/config/xfce4 ~/.config/"
+alias ldmint="dconf load / < ~/projects/config/mint_backup"
 alias ll="ls -alF"
 alias ls="ls --color=auto"
 alias mm="micromamba"
@@ -39,13 +39,10 @@ alias o2="cd $CFA/mercedes/O2"
 alias o="xdg-open"
 alias pa="micromamba activate gen"
 alias pd="micromamba deactivate"
-alias pl='julia --project=@. -e "using Pluto;
+alias pl='julia -e "using Pluto;
     notebook = length(ARGS) == 1 ? ARGS[1] : nothing;
     Pluto.run(; notebook=notebook, auto_reload_from_file=true)"'
-alias plm='julia --project=$HOME/Projects/pluto -e "using Pluto;
-    notebook = length(ARGS) == 1 ? ARGS[1] : nothing;
-    Pluto.run(; notebook=notebook)"'
-alias pr="cd ~/Projects"
+alias pr="cd ~/projects"
 alias r="ranger"
 alias rcl="rclone mount --daemon"
 alias rm="rm -i"
@@ -126,3 +123,4 @@ export PS1="\n\[\e[0;1;38;5;208m\]\u\[\e[0m\]: \[\e[0;1;38;5;40m\]\w\[\e[0m\]\[\
 
 # Terminal title
 PS1=$PS1'\[\e]0;\w\a\]'
+. "$HOME/.cargo/env"
