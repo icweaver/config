@@ -3,6 +3,7 @@ alias ..="cd .."
 alias bkg="dconf dump / > ~/projects/config/gnome_backup.dconf"
 alias bkx="cp -r ~/.config/xfce4 ~/projects/config/"
 alias bsh="nvim ~/.bashrc"
+alias cc="cargo check"
 alias cr="cargo run"
 alias ga="git add"
 alias gc="git commit -m"
@@ -26,7 +27,7 @@ alias mm="micromamba"
 alias n="nvim"
 alias ni="nvim ~/.config/nvim/init.lua"
 alias o="xdg-open"
-alias pl='julia -e "using Pluto; Pluto.run(auto_reload_from_file=true)"'
+alias pl='j -e "using Pluto; Pluto.run(auto_reload_from_file=true)"'
 alias rm="rm -i"
 alias src="source ~/.bashrc"
 alias xclip="xclip -selection c"
@@ -70,8 +71,11 @@ unset __mamba_setup
 # <<< mamba initialize <<<
 
 # Prompt
-source /usr/share/bash-completion/completions/git
-parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-export PS1="\n\[\e[0;1;38;5;202m\]\u\[\e[0m\]: \[\e[0;1;38;5;28m\]\w\[\e[0m\]$(parse_git_branch)\[\e[0m\]\n> "
+#source /usr/share/bash-completion/completions/git
+#parse_git_branch() {
+#     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+#}
+#export PS1="\n\[\e[0;1;38;5;202m\]\u\[\e[0m\]: \[\e[0;1;38;5;28m\]\w\[\e[0m\]$(parse_git_branch)\[\e[0m\]\n> "
+source /etc/bash_completion.d/git-prompt
+#export PS1='\u@\h \[\e[32m\]\w \[\e[91m\]$(__git_ps1)\[\e[00m\]$ '
+export PS1='\n\[\e[0;1;38;5;202m\]\u\[\e[0m\]: \[\e[0;1;38;5;28m\]\w\[\e[0m\]$(__git_ps1)\[\e[0m\]\n> '
