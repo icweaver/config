@@ -15,6 +15,7 @@ alias gr="git remote -v"
 alias gs="git status"
 alias gu="git commit -am 'up'; git push"
 alias j="julia"
+alias j10="julia +1.10"
 alias l="ls -CF"
 alias la="ls -A"
 alias ldg="dconf load / < ~/projects/config/gnome_backup.dconf"
@@ -76,6 +77,7 @@ unset __mamba_setup
 #     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 #}
 #export PS1="\n\[\e[0;1;38;5;202m\]\u\[\e[0m\]: \[\e[0;1;38;5;28m\]\w\[\e[0m\]$(parse_git_branch)\[\e[0m\]\n> "
+source /usr/share/bash-completion/completions/git
 source /etc/bash_completion.d/git-prompt
 #export PS1='\u@\h \[\e[32m\]\w \[\e[91m\]$(__git_ps1)\[\e[00m\]$ '
 export PS1='\n\[\e[0;1;38;5;202m\]\u\[\e[0m\]: \[\e[0;1;38;5;28m\]\w\[\e[0m\]$(__git_ps1)\[\e[0m\]\n> '
