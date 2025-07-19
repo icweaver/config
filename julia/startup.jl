@@ -1,10 +1,11 @@
-import REPL
-import Pkg
-
-isfile("Project.toml") && Pkg.activate(Base.current_project())
-
-Base.atreplinit() do repl
-    repl.interface = REPL.setup_interface(repl)
-    repl.interface.modes[1].prompt =
-        () -> string(Pkg.REPLMode.promptf()[1:end-5], "julia> ")
+if isinteractive()
+    using OhMyREPL
+    darkmode = occursin("dark", read(`gsettings get org.gnome.desktop.interface gtk-theme`, String))
+    if darkmode
+        @info "Setting dark theme"
+        colorscheme!("GitHubDark")
+    else
+        @info "Setting light theme"
+        colorscheme!("GitHubLight")
+    end
 end
