@@ -34,6 +34,7 @@ require("auto-dark-mode").setup({
 })
 
 opt.list = true
+opt.wrap = false
 opt.splitright = true
 opt.splitbelow = true
 opt.expandtab = true
