@@ -28,7 +28,7 @@ alias mm="micromamba"
 alias n="nvim"
 alias ni="nvim ~/.config/nvim/init.lua"
 alias o="xdg-open"
-alias pl='j -e "using Pluto; Pluto.run(auto_reload_from_file=true)"'
+alias pl='julia -e "using Pluto; Pluto.run(auto_reload_from_file=true)"'
 alias rm="rm -i"
 alias src="source ~/.bashrc"
 alias xclip="xclip -selection c"
@@ -46,17 +46,19 @@ mkcd ()
       cd -P -- "$1"
 }
 
-# >>> juliaup initialize >>>
-# !! Contents within this block are managed by juliaup !!
-case ":$PATH:" in
-    *:/home/mango/.juliaup/bin:*)
-        ;;
+function jltest {
+    julia=(julia)
 
-    *)
-        export PATH=/home/mango/.juliaup/bin${PATH:+:${PATH}}
-        ;;
-esac
-# <<< juliaup initialize <<<
+    # certain arguments (like those beginnning with a +) need to come first
+    if [[ $# -gt 0 && "$1" = +* ]]; then
+        julia+=("$1")
+        shift
+    fi
+
+    "${julia[@]}" --startup-file=no --threads=auto --project -e "using Pkg; Pkg.API.test(; test_args=ARGS)" "$@"
+}
+
+
 
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
@@ -81,3 +83,30 @@ source /usr/share/bash-completion/completions/git
 source /etc/bash_completion.d/git-prompt
 #export PS1='\u@\h \[\e[32m\]\w \[\e[91m\]$(__git_ps1)\[\e[00m\]$ '
 export PS1='\n\[\e[0;1;38;5;202m\]\u\[\e[0m\]: \[\e[0;1;38;5;28m\]\w\[\e[0m\]$(__git_ps1)\[\e[0m\]\n> '
+
+
+
+
+
+
+
+
+
+
+
+
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+case ":$PATH:" in
+    *:/home/mango/.juliaup/bin:*)
+        ;;
+
+    *)
+        export PATH=/home/mango/.juliaup/bin${PATH:+:${PATH}}
+        ;;
+esac
+
+# <<< juliaup initialize <<<
