@@ -28,7 +28,7 @@ alias mm="micromamba"
 alias n="nvim"
 alias ni="nvim ~/.config/nvim/init.lua"
 alias o="xdg-open"
-alias pl='julia -e "using Pluto; Pluto.run(auto_reload_from_file=true)"'
+alias pl='julia -e "using Pluto; Pluto.run(; auto_reload_from_file = true, enable_ai_editor_features = false)"'
 alias rm="rm -i"
 alias src="source ~/.bashrc"
 alias xclip="xclip -selection c"

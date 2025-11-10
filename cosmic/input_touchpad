@@ -1,3 +1,4 @@
+# Add to ~/.config/cosmic/com.system76.CosmicComp/v1/input_touchpad
 (
     state: Enabled,
     scroll_config: Some((
