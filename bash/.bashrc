@@ -28,7 +28,7 @@ alias mm="micromamba"
 alias n="nvim"
 alias ni="nvim ~/.config/nvim/init.lua"
 alias o="xdg-open"
-alias pl='julia -e "using Pluto; Pluto.run(; auto_reload_from_file = true, enable_ai_editor_features = false)"'
+alias pl='julia -e "using Pluto; Pluto.run(; auto_reload_from_file = true, enable_ai_editor_features = false, dismiss_motivational_quotes = true)"'
 alias rm="rm -i"
 alias src="source ~/.bashrc"
 alias xclip="xclip -selection c"
@@ -36,6 +36,7 @@ alias xclip="xclip -selection c"
 # Environment variables
 export PATH="$HOME/.local/bin/nvim-linux64/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.julia/bin:$PATH"
 export VISUAL=$(which nvim)
 export EDITOR=$(which nvim)
 
