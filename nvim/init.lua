@@ -15,7 +15,7 @@ local api = vim.api
 
 -- Mappings
 function map(mode, shortcut, command)
-  vim.api.nvim_set_keymap(mode, shortcut, command, { noremap = true, silent = true })
+  api.nvim_set_keymap(mode, shortcut, command, { noremap = true, silent = true })
 end
 
 function nmap(shortcut, command)
@@ -33,7 +33,11 @@ require("gruvbox").setup({
   dim_inactive = true,
   transparent_mode = true,
   palette_overrides = {
-      light1 = "#ddcebe"
+      light1 = "#ddcebe",
+      fg4 = "#000000",
+  },
+  overrides = {
+      -- StatusLineNC = {bg = "#e3dbd3"}
   }
 })
 
@@ -65,7 +69,10 @@ opt.clipboard = "unnamedplus"
 cmd("colo gruvbox")
 
 -- autoread
-vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGained" }, {
+api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGained" }, {
   command = "if mode() != 'c' | checktime | endif",
   pattern = { "*" },
 })
+
+-- Spellcheck
+api.nvim_set_hl(0, 'SpellBad', { bg = '#ff0000', fg = '#ffffff', bold = true })
