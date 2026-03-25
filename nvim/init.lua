@@ -33,7 +33,7 @@ require("gruvbox").setup({
   dim_inactive = true,
   transparent_mode = true,
   palette_overrides = {
-      light1 = "#ddcebe",
+ H    light1 = "#ddcebe",
       fg4 = "#000000",
   },
   overrides = {
@@ -69,11 +69,20 @@ opt.clipboard = "unnamedplus"
 
 cmd("colo gruvbox")
 
--- autoread
+-- highlight extra whitespace when leaving insert mode
+local whitespace_hl = { fg = 'white', bg = 'red', bold = true }
+api.nvim_create_autocmd("InsertLeave", {
+  callback = function() api.nvim_set_hl(0, 'Whitespace', whitespace_hl) end,
+})
+api.nvim_create_autocmd("InsertEnter", {
+  callback = function() api.nvim_set_hl(0, 'Whitespace', {}) end,
+})
+
+-- Autoread
 api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGained" }, {
   command = "if mode() != 'c' | checktime | endif",
   pattern = { "*" },
 })
 
 -- Spellcheck
-api.nvim_set_hl(0, 'SpellBad', { bg = '#ff0000', fg = '#ffffff', bold = true })
+api.nvim_set_hl(0, 'SpellBad', { bg = 'red', fg = 'white', bold = true })
