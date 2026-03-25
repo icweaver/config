@@ -33,7 +33,7 @@ require("gruvbox").setup({
   dim_inactive = true,
   transparent_mode = true,
   palette_overrides = {
- H    light1 = "#ddcebe",
+      light1 = "#ddcebe",
       fg4 = "#000000",
   },
   overrides = {
