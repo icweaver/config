@@ -37,7 +37,8 @@ require("gruvbox").setup({
       fg4 = "#000000",
   },
   overrides = {
-      -- StatusLineNC = {bg = "#e3dbd3"}
+      StatusLineNC = {bg = "#e3dbd3"},
+      Whitespace = { fg = 'white', bg = 'red', bold = true },
   }
 })
 
