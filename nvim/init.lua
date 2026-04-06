@@ -38,7 +38,7 @@ require("gruvbox").setup({
   },
   overrides = {
       StatusLineNC = {bg = "#e3dbd3"},
-      Whitespace = { fg = 'white', bg = 'red', bold = true },
+      -- Whitespace = { fg = 'white', bg = 'red', bold = true },
   }
 })
 
@@ -66,16 +66,23 @@ opt.softtabstop = 4
 opt.title = true
 opt.titlestring = [[%F %h%r%w %m]]
 opt.clipboard = "unnamedplus"
+opt.fillchars:append({ vert = "|" })
 
 cmd("colo gruvbox")
 
--- highlight extra whitespace when leaving insert mode
-local whitespace_hl = { fg = 'white', bg = 'red', bold = true }
+-- Highlight extra whitespace when leaving insert mode
+local whitespace_hl = { bg = 'red', fg = 'white', bold = true }
+
 api.nvim_create_autocmd("InsertLeave", {
-  callback = function() api.nvim_set_hl(0, 'Whitespace', whitespace_hl) end,
+  callback = function()
+    api.nvim_set_hl(0, 'TrailingSpace', whitespace_hl)
+    vim.fn.matchadd('TrailingSpace', [[\s\+$]], 10, 99)
+  end,
 })
 api.nvim_create_autocmd("InsertEnter", {
-  callback = function() api.nvim_set_hl(0, 'Whitespace', {}) end,
+  callback = function()
+    pcall(vim.fn.matchdelete, 99)
+  end,
 })
 
 -- Autoread
