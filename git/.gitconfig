@@ -1,13 +1,9 @@
 [user]
-	email = weaveric@gmail.com
-	name = icweaver
-[core]
-	editor = nvim
-[merge]
-	tool = vimdiff
-[mergetool]
-	keepBackup = false
-[mergetool "vimdiff"]
-	cmd = nvim -d $LOCAL $REMOTE $MERGED
+    email = weaveric@gmail.com
+    name = Ian Weaver
 [difftool]
-	prompt = false
+    prompt = false
+[diff]
+    tool = nvimdiff
+[difftool "nvimdiff"]
+    cmd = "nvim -d \"$REMOTE\" \"$LOCAL\""
